@@ -1,0 +1,2135 @@
+.inner-banner {
+    padding: 120px 0;
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: #444e57;
+
+    h1{
+    	font-size: 48px;
+	    letter-spacing: 4px;
+	    line-height: 121px;
+	    color: $white;
+	    font-family: $introrustg;
+	    margin: 0;
+    }
+
+    .inner-page-btn-wrapper {
+	    display: flex;
+	    justify-content: center;
+
+	    a{
+	    	font-size: 16px;
+		    font-weight: 600;
+		    line-height: 19px;
+		    color: $white;
+		    border: 1px solid $white;
+		    border-radius: 2px;
+		    margin: 0 20px;
+		    padding: 15px 20px;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    outline: none;
+
+		    &:first-child{
+		        width: 114px;
+    			background-color: rgba($black,0.49);
+
+
+				&:hover{
+					background-color: rgba($black,0.29);
+				}
+		    }
+
+		    &:last-child{
+		    	width: 228px;
+    			background-color: $green;
+    			-webkit-transform: perspective(1px) translateZ(0);
+			    transform: perspective(1px) translateZ(0);
+			    -webkit-transition-property: color;
+			    transition-property: color;
+			    -webkit-transition-duration: 0.3s;
+			    transition-duration: 0.3s;
+
+			    &:before{
+			    	content: "";
+				    position: absolute;
+				    z-index: -1;
+				    top: 0;
+				    left: 0;
+				    right: 0;
+				    bottom: 0;
+				    height: 100%;
+				    background: $white;
+				    -webkit-transform: scaleX(0);
+				    transform: scaleX(0);
+				    -webkit-transform-origin: 0 50%;
+				    transform-origin: 0 50%;
+				    -webkit-transition-property: transform;
+				    transition-property: transform;
+				    -webkit-transition-duration: 0.3s;
+				    transition-duration: 0.3s;
+				    -webkit-transition-timing-function: ease-out;
+				    transition-timing-function: ease-out;
+			    }
+
+			    &:hover{
+			    	color: $green;
+    				border: 1px solid $green;
+
+    				&:before{
+    				    -webkit-transform: scaleX(1);
+    					transform: scaleX(1);
+    				}
+			    }
+		    }
+	    }
+	}
+
+	&.boat-rental-banner,
+	&.careers-banner{
+		padding-bottom: 200px;
+	}
+
+	&.careers-banner{
+		h1{
+			font-size: 90px;
+			letter-spacing: 8.28px;
+			line-height: 121px;
+			margin-bottom: 20px;
+		}
+		.inner-page-btn-wrapper{
+			a:last-child{
+				width: 330px;
+				max-width: 100%;
+				margin: 0;
+			}
+		}
+	}
+}
+
+.info-media-section {
+    box-shadow: 0 0 4px 0 rgba($black,0.5);
+    margin-top: -150px;
+    background-color: $white;
+    padding: 0 50px 50px;
+    margin-bottom: 100px;
+    font-family: $Montserrat;
+
+    h2{
+    	text-align: center;
+	    margin: 0;
+	    font-size: 50px;
+	    letter-spacing: 4.6px;
+	    font-family: HelloLucky;
+	    line-height: 121px;
+    }
+
+    .nav-tabs{
+    	display: flex;
+    	flex-wrap: wrap;
+    	justify-content: center;
+	    padding: 20px 0 0 0;
+	    margin-bottom: 50px;
+	    border-bottom: 1px solid #979797;
+
+	    li{
+	   	    flex: 0 0 20%;
+    		text-align: center;
+
+    		a{
+    			text-decoration: none;
+			    display: inline-block;
+			    font-size: 14px;
+			    font-weight: 500;
+			    letter-spacing: 0.47px;
+			    line-height: 26px;
+			    text-align: center;
+			    color: $black;
+			    margin-bottom: -2px;
+			    padding: 0 10px 10px;
+			    vertical-align: middle;
+			    -webkit-transform: perspective(1px) translateZ(0);
+			    transform: perspective(1px) translateZ(0);
+			    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			    position: relative;
+
+			    &:before{
+		    	    content: "";
+				    position: absolute;
+				    z-index: -1;
+				    left: 51%;
+				    right: 51%;
+				    bottom: -3px;
+				    background: #1383FB;
+				    height: 3px;
+				    -webkit-transition-property: left, right;
+				    transition-property: left, right;
+				    -webkit-transition-duration: 0.3s;
+				    transition-duration: 0.3s;
+				    -webkit-transition-timing-function: ease-out;
+				    transition-timing-function: ease-out;
+			    }
+
+			    &:hover{
+			    	color: #1383FB;
+
+			    	&:before{
+			    		left: 0;
+			    		right: 0;
+			    	}
+			    }
+
+			    &.active{
+		    	    color: #1383FB;
+    				border-bottom: 3px solid #1E88FB;
+			    }
+    		}
+	    }
+    }
+
+    .tab-content{
+
+    	&>.tab-pane{
+	    	display: block;
+		  	height: 0;
+		  	overflow: hidden;
+
+		  	.dataTables_wrapper{
+		  		width: 100%;
+    			padding: 0 20px;
+		  	}
+	    }
+
+	    &>.active{
+	    	height: auto;
+	    }
+
+	    .slick-slider{
+	    	max-width: 100%;
+	    }
+
+	    .slider-for{
+	    	.slick-slide{
+	    		img,
+	    		video,
+	    		iframe{
+				    width: 1026px;
+				    max-width: 100%;
+				    height: 590px;
+				    margin: auto;
+				}
+	    	}
+	    }
+
+	    .slider-nav{
+	    	margin: 30px auto;
+	    	padding: 0 5%;
+
+	    	.slick-slide{
+	    		img,
+	    		video,
+	    		iframe{
+				    height: 110px;	
+				    width: 220px;
+				    max-width: 100%;
+				    margin: auto;
+				    padding: 10px;
+				}
+	    	}
+	    	.slick-dots{
+	    		display: none;
+	    	}
+
+	    	.slick-arrow{
+	    		background-repeat: no-repeat;
+			    background-size: 100% 100%;
+			    width: 40px;
+			    height: 40px;
+			    z-index: 9;
+
+			    &:before{
+			    	content: "";
+			    }
+
+			    &.slick-prev{
+				    left: 2%;
+				    background-image: url(../images/image-left-arrow.png);
+			    }
+
+			    &.slick-next{
+				    right: 2%;
+				    background-image: url(../images/image-right-arrow.png);
+			    }
+	    	}
+	    }
+
+	    .profile-tab{
+	    	.info-media-left{
+	    		height: auto;
+	    		width: 200px;
+	    	}
+	    }
+
+    	.info-media-left {
+		    height: 355px;
+		    width: 397px;
+		    background-color: #D8D8D8;
+		    margin: auto;
+		    max-width: 100%;
+
+		    img{
+		    	height: 100%;
+			    width: 100%;
+			    object-fit: cover;
+			    object-position: center;
+		    }
+		}
+    	.info-media-right{
+    		p {
+			    font-size: 14px;
+			    font-weight: 500;
+			    letter-spacing: 0.47px;
+			    line-height: 26px;
+				@media all and (max-width: 767px) {
+					text-align: center;
+				}
+			}
+    	}
+    }
+
+    /*Careers page css*/
+    &.careers-listing-section{
+    	p {
+		    color: $black;
+		    font-family: $Montserrat;
+		    font-size: 16px;
+		    font-weight: 500;
+		    letter-spacing: 0.53px;
+		    line-height: 26px;
+		    text-align: center;
+		}
+
+		.careers-post {
+		    height: 614px;
+		    width: 484px;
+		    background-color: $white;
+		    box-shadow: 0 0 10px 0 rgba($black,0.2);
+		    margin: 50px auto 0;
+		    max-width: 100%;
+
+		    .careers-post-thumbnail {
+			    height: 364px;
+			    width: 484px;
+			    max-width: 100%;
+			    overflow: hidden;
+
+			    img{
+			        width: 100%;
+				    height: 100%;
+				    object-fit: cover;
+				    object-position: center;
+				    transition: easein 1s;
+    				transition-property: transform;
+			    }
+
+			    &:hover{
+			    	img{
+			    		transform: scale(1.1);
+			    	}
+			    }
+			}
+
+			.careers-post-info {
+			    text-align: center;
+			    padding: 10px 12px 0;
+
+			    a{
+			    	text-decoration: none;
+			    }
+
+			    h3{
+			    	text-transform: uppercase;
+				    font-size: 24px;
+				    font-weight: 600;
+				    letter-spacing: 0.17px;
+				    line-height: 28px;
+				    color: $blue;
+				    margin: 10px 0;
+				    text-overflow: ellipsis;
+				    overflow: hidden;
+				    -webkit-line-clamp: 1;
+				    display: -webkit-box;
+				    -webkit-box-orient: vertical;
+			    }
+
+			    p{
+			    	letter-spacing: 0.11px;
+				    line-height: 28px;
+				    color: #212121;
+				    text-align: left;
+				    text-overflow: ellipsis;
+				    overflow: hidden;
+				    -webkit-line-clamp: 6;
+				    display: -webkit-box;
+				    -webkit-box-orient: vertical;
+			    }
+			}
+		}
+    }
+    /*Careers page css ends*/
+
+    /*Careers Form page css*/
+    &.careers-detail-page{
+    	padding: 0 100px 50px;
+
+    	.title-btn-container {
+		    position: relative;
+
+		    a{
+			    position: absolute;
+			    display: inline-block;
+			    left: 0;
+			    top: 40%;
+			    background-color: rgba($black,0.49);
+			    border-radius: 2px;
+			    color: $white;
+			    padding: 10px 35px;
+			    font-weight: 600;
+			    text-decoration: none;
+			    border: 2px solid #828282;
+
+			    &:hover{
+		    	    color: #828282;
+					background-color: $white;
+			    }
+			}
+		}
+
+    	h2{
+    		color: $blue;
+    	}
+
+    	p{
+    		color: $black;
+		    font-size: 16px;
+		    font-weight: 500;
+		    letter-spacing: 0.53px;
+		    line-height: 26px;
+		    text-align: center;
+    	}
+
+    	.careers-form {
+		    margin-top: 50px;
+
+		    .row{
+		    	align-items: flex-end;
+		    }
+
+		    .form-group {
+			    margin-bottom: 30px;
+
+			    .wpcf7-form-control-wrap {
+				    float: left;
+				    width: 100%;
+					input[type=file]{
+						line-height: 30px;
+					}
+				    span.wpcf7-not-valid-tip {
+					    font-size: 14px;
+					    position: absolute;
+					    left: 0;
+					    top: 100%;
+					}
+				}
+
+			    label{
+			    	color: $black;
+				    font-size: 14px;
+				    font-weight: 500;
+				    line-height: 18px;
+
+				    &.custom-file-label{
+				    	color: $black;
+					    border: 1px solid #4B4B4B;
+					    border-radius: 2px;
+					    height: 50px;
+					    outline: none;
+					    font-size: 16px;
+					    font-weight: 500;
+					    line-height: 19px;
+					    display: flex;
+					    align-items: center;
+
+					    &:after{
+					    	height: 100%;
+					    	padding: 12px;
+					    }
+				    }
+			    }
+
+			    input{
+			    	color: $black;
+			    	border: 1px solid #4B4B4B;
+				    border-radius: 2px;
+				    height: 50px;
+				    outline: none;
+				    font-size: 16px;
+				    font-weight: 500;
+				    line-height: 19px;
+
+				    &:focus{
+				    	outline: none;
+				    	box-shadow: none;
+				    }
+
+				    &::placeholder{
+				    	opacity: 0.51;
+				    }
+			    }
+
+			    textarea{
+			    	float: left;
+				    width: 100%;
+				    padding: 6px 12px;
+				    outline: none;
+				    font-size: 16px;
+				    font-weight: 500;
+				    color: $black;
+				    border: 1px solid #4B4B4B;
+				    border-radius: 2px;
+
+				    &:focus{
+				    	outline: none;
+				    	box-shadow: none;
+				    }
+
+				    &::placeholder{
+				    	opacity: 0.51;
+				    }
+			    }
+
+			    button,
+			    input[type="submit"]{
+
+			    	font-size: 16px;
+			    	letter-spacing: unset;
+			    	padding: 10px 30px;
+			    }
+
+			    input[type="submit"]{
+			    	border: 2px solid $green;
+			    	color: $white;
+    				font-weight: 600;
+					@media all and (max-width: 480px) {
+						width: 100%;
+					}
+			    	&:hover{
+			    		background-color: $white;
+			    		color: $green;
+			    	}
+			    }
+			}
+
+			div.wpcf7-validation-errors{
+				display: none !important;
+			}
+		}
+    }
+    /*Careers Form page css ends*/
+}
+
+.availability-booking-section{
+	padding: 50px 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #2f3947;
+
+	.booking-form{
+		background-color: $white;
+		.title-div{
+			h2{
+				text-align: center;
+				padding: 30px 5px;
+			    margin: 0;
+			    font-family: $HelloLucky;
+			    color: $blue;
+			    font-size: 40px;
+			    letter-spacing: 6.44px;
+			}
+		}
+		
+		form {
+		  background-color: $white;
+		  padding: 40px;
+		  min-width: 300px;
+
+			ul{
+				display: flex;
+				justify-content: space-between;
+				list-style-type: none;
+				padding: 0;
+				position: relative;
+				padding-bottom: 10px;
+
+				&:before{
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					background: $grey;
+					bottom: 30%;
+				}
+
+				li{
+					position: relative;
+					display: flex;
+				    flex-direction: column;
+				    justify-content: center;
+				    align-items: center;
+				    font-size: 14px;
+				    font-weight: 600;
+				    letter-spacing: 0.47px;
+				    line-height: 26px;
+				    color: $grey;
+
+					&.step{
+						span {
+						height: 12px;
+						width: 12px;
+						margin: 0 2px;
+						background-color: $grey;
+						border: none;  
+						border-radius: 50%;
+						display: inline-block;
+						}
+					}
+
+					&.active{
+						color: $blue;
+
+						span{
+							background-color: $blue;
+						}
+					}
+				}
+			}
+
+			.tab{
+				display: none;
+
+				&.active{
+					display: block;
+				}
+				&.accessories-tab,
+				&.details-tab{
+					.btn-container{
+						p#loading,
+						p#loadingCustomer{
+							position: absolute;
+						    top: 0;
+						    left: 0;
+						    margin: 0;
+						    width: 100%;
+						    text-align: right;
+						    cursor: no-drop;
+
+						    img{
+						    	float: right;
+						    }
+						}
+					}
+				}
+
+				&.select-dates-tab{
+					.group-dt{
+						float: left;
+					    width: 100%;
+					    margin-bottom: 20px;
+
+					    label{
+					    	&.error{
+					    		color: $red;
+					    		font-size: 14px;
+					    		margin: 0;
+					    		float: left;
+							    display: block;
+							    width: 100%;
+
+					    	}
+					    }
+
+					    input,
+					    select#num_of_people,
+					    select{
+					    	border: 1px solid $grey;
+						    border-radius: 3px;
+						    /*width: 270px;*/
+						    width: 370px;
+						    max-width: 100%;
+						    height: 53px;
+						    font-size: 16px;
+						    font-weight: 500;
+						    float: left;
+						    padding: 6px 12px;
+						    outline: none;
+						    box-shadow: none;
+					    }
+					}
+				}
+
+				& > .row{
+					/*align-items: center;*/
+				}
+				.time-row{
+					label{
+						display: block;
+					}
+
+					.custom-control.custom-radio{
+					    display: inline-block;
+						margin-right: 8px;
+					}
+				}
+
+				h4{
+					font-size: 16px;
+				    font-weight: 600;
+				    letter-spacing: 0.53px;
+				    line-height: 26px;
+				    text-transform: uppercase;
+				    margin: 30px 0;
+				}
+
+				input.invalid {
+					background-color: #ffdddd;
+				}
+				.radios{
+					display: flex;
+	    			justify-content: space-between;
+	    			flex-wrap: wrap;
+
+	    			.input-wrapper{
+	    				flex: 0 0 33.33%;
+	    			}
+
+					input[type=radio]{
+						display: none;
+
+						&:checked + .radio div {
+						    background-color: $green;
+
+						    h2,
+						    h3{
+						    	color: $white;
+						    }
+						    h3{
+						    	margin: 0;
+						    	font-family: $introrustg;
+						    }
+						    p{
+						    	color: $white;
+						    }
+						}
+					}
+
+					.radio{
+
+						div{
+						    cursor: pointer;
+						    border: 1px solid $green;
+						    background-color: $white;
+						    display: flex;
+						    flex-direction: column;
+						    align-items: center;
+						    justify-content: center;
+						    width: 191px;
+						    height: 157px;
+						    margin-bottom: 10px;
+
+						    h2{
+						    	font-size: 60px;
+							    letter-spacing: 2.5px;
+							    color: $green;
+							    font-family: introrustg;
+							    margin: 0;
+						    }
+
+						    p{
+					    	    font-size: 14px;
+							    font-weight: 600;
+							    letter-spacing: 4.37px;
+							    color: $green;
+							    margin-bottom: 0;
+						    }
+						}
+
+						p{
+							color: $green;
+							font-size: 20px;
+							font-weight: bold;
+							letter-spacing: 1.18px;
+							line-height: 50px;
+							text-align: center;
+						}
+					}
+				}
+
+				.your-iternary-div {
+				    min-height: 369px;
+				    width: 300px;
+				    max-width: 100%;
+				    border: 1px solid #E8E8E8;
+				    border-radius: 3px;
+				    background-color: $green;
+				    box-shadow: 0 1px 1px 0 rgba($black,0.05);
+				    margin: 0 auto;
+				    margin-top: 50px;
+				    text-align: center;
+				    position: relative;
+
+				    &:before{
+				    	content: '';
+					    position: absolute;
+					    top: -7px;
+					    left: 0;
+					    right: 0;
+					    margin: auto;
+					    width: 0;
+					    height: 0;
+					    border-left: solid 7px transparent;
+					    border-right: solid 7px transparent;
+					    border-bottom: solid 7px $green;
+				    }
+
+				    h5{
+				    	font-size: 20px;
+					    margin: 0;
+					    color: $white;
+					    font-family: $introrustg;
+					    padding: 20px 0;
+					    border-bottom: 1px solid $white;
+				    }
+
+				    p{
+				    	font-family: $introrustg;
+					    color: $white;
+					    font-size: 30px;
+				    }
+
+				    h4{
+				    	font-size: 28px;
+					    color: $white;
+					    font-family: introrustg;
+					    font-weight: 400;
+					    margin: 20px 0;
+				    }
+
+				    h3{
+			    	    font-size: 34px;
+					    font-weight: bold;
+					    letter-spacing: 2px;
+					    line-height: 71px;
+					    color: $white;
+				    }
+
+				    button{
+			    	    border: 1px solid $white;
+					    border-radius: 2px;
+					    background-color: $blue;
+					    display: inline-block;
+					    width: 228px;
+					    max-width: 100%;
+					    margin-bottom: 10px;
+					    padding: 14px;
+					    letter-spacing: unset;
+				    }
+
+				    a.add-to-cart{
+				    	width: 228px;
+				    	max-width: 100%;
+					    border: 1px solid $white;
+					    border-radius: 2px;
+					    display: inline-block;
+					    padding: 12px 0;
+					    font-size: 16px;
+					    font-weight: bold;
+					    line-height: 19px;
+					    color: $white;
+				    }
+
+				    ul{
+				    	display: block;
+    					color: $white;
+    					margin: 0;
+
+    					&:before{
+    						display: none;
+    					}
+
+    					li{
+    						display: flex;
+						    flex-direction: row;
+						    justify-content: space-between;
+						    padding: 10px;
+						    border-top: 1px dashed $white;
+
+						    span{
+						    	display: inline-block;
+    							color: $white;
+
+    							&:last-child{
+    								font-family: $introrustg;
+    								font-weight: 400;
+    							}
+						    }
+
+						    a{
+						    	color: $white;
+    							text-decoration: none;
+						    }
+
+						    &:last-child{
+						    	border-bottom: 1px dashed $white;
+						    	border-top: 0;
+						    }
+    					}
+				    }
+
+				    p.total-amt {
+					    font-family: $introrustg;
+					    color: $white;
+					    font-size: 30px;
+					    margin-bottom: 10px;
+					}
+				}
+
+				&.select-dates-tab{
+					.mbsc-page{
+						
+
+						&.mbsc-ios{
+							font-family: $Montserrat;
+							min-height: auto;
+							background-color: $white;
+							
+							.mbsc-cal-day-date{
+								border-radius: 0;
+							}
+							.mbsc-ios.mbsc-form{
+								background-color: $white;
+								font-family: $Montserrat;
+
+								.mbsc-form-group,
+								.mbsc-form-grid{
+									margin-top: 0;
+									font-family: $Montserrat;
+
+									.mbsc-input-box.mbsc-control-w{
+										margin-top: 0;
+										border: 1px solid #d2d2d2;
+    									border-radius: 0;
+									}
+
+									.mbsc-fr-c{
+										font-family: $Montserrat;
+									}
+								}
+							}
+							.mbsc-cal-multi{
+								font-family: $Montserrat;
+							}
+							.mbsc-cal .mbsc-cal-btn{
+								position: absolute;
+								bottom: 10px;
+								width: 30px;
+							    height: 30px;
+							    display: flex;
+							    justify-content: center;
+							    align-items: center;
+							    border: 1px solid;
+							    font-size: 20px;
+							    color: #908484;
+
+							    &.mbsc-cal-prev-m{
+							    	right: 50px;
+							    }
+
+							    &.mbsc-cal-next-m{
+							    	right: 5px;
+							    }
+							}
+						}
+					}
+
+					.your-iternary-div h5{
+						border-bottom: 0;
+					}
+				}
+
+				&.people-onboard-tab{
+					.your-iternary-div h5{
+						border-bottom: 0;
+					}
+				}
+
+				&.details-tab{
+					padding-top: 20px;
+
+					.form-group{
+						float: left;
+					    width: 100%;
+					    margin-bottom: 25px;
+
+					    label{
+					    	font-size: 14px;
+						    font-weight: 500;
+						    display: block;
+						    margin-bottom: 3px;
+
+						    &.error{
+						    	color: $red;
+						    	float: left;
+						    	margin: 0;
+						    }
+
+						    &#termscondition-error{
+						    	position: absolute;
+						    	bottom: -20px;
+						    }
+					    }
+
+					    input,
+					    select{
+					    	border: 1px solid $grey;
+						    border-radius: 3px;
+						    width: 270px;
+						    max-width: 100%;
+						    height: 53px;
+						    font-size: 16px;
+						    font-weight: 500;
+						    float: left;
+						    padding: 6px 12px;
+
+						    &::placeholder{
+						    	opacity: 0.5;
+						    }
+
+						    &.form-check-input{
+						    	width: auto;
+						    	height: auto;
+						    	margin-top: 4px;
+						    }
+					    }
+					}
+					.tandc-div{
+						p {
+						    font-size: 14px;
+						    font-weight: 600;
+						    letter-spacing: 0.47px;
+						    line-height: 26px;
+						    color: $blue;
+						}
+					}
+					.address-field,
+					.name-field{
+						.form-group{
+							input{
+								width: 90%;
+								max-width: 100%;
+							}
+						}
+					}
+
+					.your-iternary-div{
+
+						ul li:nth-of-type(2){
+							border: 0;
+						}						
+
+						h5{
+							border-bottom: 0;
+						}
+					}
+				}
+
+				.btn-container{
+					margin-top: 30px;
+					position: relative;
+					float: left;
+    				width: 100%;
+					@media all and (max-width:767px) {
+						margin-top: 0;
+						text-align:center;
+					}
+
+					.blue-btn{
+						width: 228px;
+					    padding: 14px;
+					    max-width: 100%;
+					    font-size: 16px;
+					    text-transform: uppercase;
+					    letter-spacing: unset;
+					    //margin: 0 20px;
+						margin: 0;
+					}
+					#prevBtn {
+						background-color: $white;
+					    width: 228px;
+					    border: 1px solid $black;
+					    border-radius: 2px;
+					    padding: 14px;
+					    font-size: 16px;
+					    font-weight: bold;
+					    line-height: 1;
+						margin-right:20px;
+					}
+				}
+
+				&.accessories-tab{
+					h4{
+						margin: 30px 0;
+					}
+
+					table{
+						width: 100%;
+
+						thead {
+						    font-size: 15px;
+						    padding: 10px;
+						    border-radius: 2px;
+    						background-color: rgba($green, 0.07);
+
+						    tr{
+						    	th{
+						    		padding: 10px;
+						    	}
+						    }
+						}
+
+						tbody{
+							tr{
+								border-bottom: 1px solid rgba(151, 151, 151, 0.5);
+								cursor: pointer;
+
+								td{
+									padding: 20px 0px;
+    								font-size: 14px;
+    								position: relative;
+
+    								span{
+    									&.product-name,
+    									&.price-blue {
+										    color: $blue;
+										    font-weight: bold;
+										    font-size: 16px;
+										}
+										&.adventure-time{
+											font-size: 14px;
+										    width: 100%;
+										    display: table;
+										}
+    								}
+
+									/* Hide the browser's default checkbox */
+									.container input {
+									  position: absolute;
+									  opacity: 0;
+									  cursor: pointer;
+									  height: 0;
+									  width: 0;
+									}
+
+									/* Create a custom checkbox */
+									.checkmark {
+									  position: absolute;
+									  top: 30%;
+									  left: 5px;
+									  height: 25px;
+									  width: 25px;
+									  background-color: transparent;
+									  border-radius: 50%;
+									  border: 1px solid #979797;
+									}
+
+									/* When the checkbox is checked, add a blue background */
+									input:checked ~ .checkmark {
+									  background-color: $green;
+									}
+
+									/* Show the checkmark when checked */
+									input:checked ~ .checkmark:after {
+									  border-color: $white;
+									}
+
+									/* Style the checkmark/indicator */
+									.checkmark:after {
+										content: "";
+										position: absolute;
+										display: block;	
+									  left: 9px;
+									  top: 5px;
+									  width: 5px;
+									  height: 10px;
+									  border: solid #979797;
+									  border-width: 0 2px 2px 0;
+									  -webkit-transform: rotate(45deg);
+									  -ms-transform: rotate(45deg);
+									  transform: rotate(45deg);
+									}
+								}
+							}
+						}
+					}
+
+					.your-iternary-div{
+
+						ul li:nth-of-type(2){
+							border: 0;
+						}						
+
+						h5{
+							border-bottom: 0;
+						}
+					}
+				}
+
+				&.payment-tab{
+					.cart-payment-method{
+						.payment-paypal,
+						.card-method,
+						.paypal-method{
+						    padding: 20px 25px;
+						    display: table;
+						    width: 100%;
+
+						    .payment-paypal-radio {
+							    display: table;
+							    width: 100%;
+
+							    img{
+							    	float: right;
+    								margin-top: 10px;
+							    }
+							}
+						}
+
+						.payment-card,
+						.card-method,
+						.paypal-method{
+							background-color: $white;
+
+							.payment-card-radio {
+							    padding: 20px 25px;
+							    display: table;
+							    width: 100%;
+
+							    img{
+							    	float: right;
+    								margin-top: 10px;
+							    }
+							}
+
+							.payment-input{
+								& > label{
+									width: 100%;
+    								padding: 0px 25px;
+
+    								input{
+    									padding: 10px;
+									    width: 100%;
+									    font-size: 17px;
+									    border: 1px solid #aaaaaa;
+									    width: 100%;
+									    height: 50px;
+    								}
+								}
+							}
+
+							.input-card-num{
+								padding: 0px 20px 20px;
+							    display: table;
+							    width: 100%;
+
+							    label{
+							    	width: 50%;
+								    float: left;
+								    padding: 0px 5px;
+
+								    input{
+    									padding: 10px;
+									    width: 100%;
+									    font-size: 17px;
+									    border: 1px solid #aaaaaa;
+									    width: 100%;
+									    height: 50px;
+    								}
+							    }
+							}
+						}
+					}
+				}
+
+				&.confirmation-tab{
+					text-align: center;
+    				padding: 40px 0;
+
+    				h5.payment-title{
+    					display: table;
+					    padding: 20px 40px;
+					    margin: 0px auto 20px;
+					    border-bottom: 2px solid #979797;
+    				}
+
+    				ul.order-ul{
+    					display: table;
+					    margin: auto;
+					    list-style: none;
+					    padding: 20px 0px 30px;
+
+					    &:before{
+    						display: none;
+    					}
+
+					    li{
+					    	float: left;
+						    border-right: 1px solid black;
+						    padding: 0px 10px;
+						    display: table-cell;
+						    color: $black;
+						    font-size: 16px;
+						    font-weight: 400;
+
+						    span{
+						    	font-weight: 600;
+						    }
+
+						    &:last-child{
+						    	border-right: 0px;
+						    }
+					    }
+    				}
+
+    				.div-btn-dwnld{
+    					.blue-btn{
+						    padding: 13px 20px;
+						    letter-spacing: unset;
+						    height: auto;
+						    font-size: 16px;
+						    margin-right: 20px;
+						}
+
+						.download-btn{
+						    display: inline-block;
+						    color: $black;
+						    border: 1px solid $black;
+						    border-radius: 3px;
+						    font-weight: bold;
+						    padding: 13px 20px;
+						    line-height: 1;
+						}
+    				}
+
+    				.your-iternary-div{
+
+						ul li:nth-of-type(3){
+							border: 0;
+						}						
+
+						h5{
+							border-bottom: 0;
+						}
+					}
+				}
+			}		
+		}
+
+		&.sportsfishing-form{
+			form{
+				.tab.select-dates-tab{
+					.time-div{
+						position: relative;
+
+						.custom-control.custom-radio{
+							display: inline-block;
+							margin-right: 10px;
+							position: static;
+
+							&:last-child{
+								margin: 0;
+							}
+
+							label#strttime-error{
+								display: block;
+							    position: absolute;
+							    width: 100%;
+							    margin: 0;
+							    bottom: -20px;
+							    color: $red;
+							    font-size: 14px;
+							}
+						}
+						.custom-control-input:checked~.custom-control-label::before{
+							border-color: $blue;
+    						background-color: $blue;
+						}
+					}
+					p{
+						text-align: center;
+						font-weight: 500;
+					}
+					.your-iternary-div{
+						h5{
+							border-bottom: 1px solid $white;
+						}
+						h4{
+							font-size: 18px;
+						}
+						ul li:nth-of-type(2){
+							border-top: 1px dashed $white;
+						}
+					}
+				}
+
+				.tab.details-tab{
+					.your-iternary-div{
+						ul li{
+							&:first-child{
+								justify-content: center;
+							}
+							&:nth-of-type(2){
+								border-top: 1px dashed $white;
+							}
+						}
+					}
+				}
+				.tab.payment-tab{
+					.your-iternary-div{
+						h5{
+							border-bottom: 0;
+						}
+						ul li{
+							&:first-child{
+								justify-content: center;
+							}
+							&:nth-of-type(2){
+								border-top: 1px dashed $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.book-by-stay{
+
+	.row.bbs-people-date-row{
+		margin: 0;
+		width: 100%;
+
+		input,
+		select{
+			padding: 10px;
+		    width: 100%;
+		    font-size: 17px;
+		    border: 1px solid #aaaaaa;
+		    border-radius: 0;
+		    height: 50px;
+		}
+
+		&.bbs-people-row{
+			margin-top: 20px;
+		}
+	}
+}
+
+/*.price-box.total-person{
+	input,
+	select{
+		padding: 10px;
+	    width: 100%;
+	    font-size: 17px;
+	    border: 1px solid #aaaaaa;
+	    border-radius: 0;
+	    height: 50px;
+	}
+}*/
+
+.inner-banner.careers-banner.project-details-banner{
+	position: relative;
+	padding: 150px 0;
+
+	&:before{
+	    position: absolute;
+	    content: "";
+	    width: 100%;
+	    height: 100%;
+	    left: 0;
+	    top: 0;
+	    background: rgba($black,0.4);
+	}
+
+	h1{
+		font-size: 50px;
+		line-height: 56px;
+		margin: 0;
+		position: relative;
+	}
+}
+.section-wrapper{
+	.project-details-page-section {
+	    padding: 30px 0;
+	    margin-bottom: 30px;
+
+	    iframe{
+	    	display: block;
+		    margin: 30px auto;
+		    width: 700px;
+		    max-width: 100%;
+		    height: 400px;
+	    }
+
+	    &:nth-of-type(odd) {
+		    background-color: $blue;
+		    color: $white;
+		}
+	}
+}
+
+
+/*Events Page Code*/
+
+.calendar-section {
+    position: relative;
+    padding-bottom: 50px;
+    float: left;
+    width: 100%;
+
+    &:before{
+    	content: "";
+	    position: absolute;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    height: 100%;
+	    background: #f8f8f7;
+    }
+
+    .calendar-inner-section {
+	    margin-top: -100px;
+	    background-color: $white;
+	    box-shadow: 0px 1px 3px 1px #ccc;
+	    position: relative;
+	    padding-top: 30px;
+	    float: left;
+	    width: 100%;
+
+	    h2 {
+		    text-align: center;
+		    padding: 20px 0 40px 0;
+		    font-family: $HelloLucky;
+		    font-size: 40px;
+		    letter-spacing: 2px;
+		    color: $blue;
+		    /* line-height: 1.428; */
+		}
+
+		.stec-top{
+			background: #f4fbfe;
+			padding: 10px 0;
+		}
+	}
+}
+body .stec-top .stec-top-menu > li:hover {
+    background: $green !important;
+    color: $white !important;
+}
+body .stec-top .stec-top-menu-date-control-up,
+body .stec-top .stec-top-menu-date-control-up:hover,
+body .stec-top .stec-top-menu-date-control-down,
+body .stec-top .stec-top-menu-date-control-down:hover,
+body .stec-top .stec-top-menu-date ul li,
+body .stec-top .stec-top-menu-date ul li:hover,
+body .stec-top .stec-top-menu > li.active{
+	background: $green !important;
+}
+body .stec-top .stec-top-menu-date ul li.active{
+	background: $blue !important;
+}
+body .stec-top .stec-top-menu > li{
+	background: transparent !important;
+}
+.stec-top .stec-top-menu.stec-top-menu-layouts li {
+    border-radius: 50px;
+    margin: 0 10px !important;
+}
+body .stec-layout-month-daycell .stec-layout-month-daycell-wrap .stec-layout-month-daycell-num,
+body .stec-layout-week-daycell .stec-layout-week-daycell-wrap .stec-layout-week-daycell-num,
+body .stec-layout-month-daylabel p,
+body .stec-layout-week-daylabel p,
+body .stec-top .stec-top-menu > li p,
+body .stec-layout-event-preview-left-text-title,
+body .stec-layout-event-preview-left-text-sub,
+body .stec-layout-day-noevents{
+	font-family: $Montserrat !important;
+}
+
+body .stec-top .stec-top-menu > li p{
+	color: $black !important;
+}
+
+.stec-layout-day .stec-layout-day-noevents{
+	margin-left: 15px;
+}
+
+body .stec-layout-month-daycell.stec-layout-month-daycell-today .stec-layout-month-daycell-num::before,
+.stec-layout-month-daycell.stec-layout-month-daycell-today .stec-layout-month-daycell-num:before{
+	background-color: $blue !important
+}
+
+body .stec-top .stec-top-menu > li[data-action="today"] svg.fa-calendar-check{
+	margin-right: 10px;
+}
+
+
+/*responsive code starts*/
+@media all and (min-width: 1200px){
+	.availability-booking-section {
+		.booking-form form {
+			.tab {
+				.radios {
+					div.input-wrapper:nth-child(1),
+					div.input-wrapper:nth-child(2),
+					div.input-wrapper:nth-child(3){
+						margin-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 1199px){
+	.info-media-section{
+		/*careers page responsive code*/
+		&.careers-listing-section{
+			.careers-post{
+				height: 460px;
+
+				.careers-post-thumbnail{
+					height: 200px;
+				}
+
+				.careers-post-info{
+					h3{
+						font-size: 20px;
+						line-height: 26px;
+						-webkit-line-clamp: 2;
+					}
+				}
+			}
+		}
+
+		.tab-content{
+			.slider-nav{
+				padding: 0 8%;
+			}
+		}
+	}
+
+	.availability-booking-section{
+		.booking-form form{
+			.tab{
+				.radios{
+					.radio{
+						div{
+							width: 170px;
+    						height: 150px;
+						}
+					}
+				}
+
+				&.details-tab .address-field .form-group input,
+				&.details-tab .name-field .form-group input{
+					width: 100%;
+				}
+
+				&.payment-tab{
+					.cart-payment-method{
+						.payment-card,
+						.card-method,
+						.paypal-method{
+							.payment-card-radio{
+								padding: 20px 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 991px){
+	.inner-banner{
+		h1{
+			font-size: 40px;
+			line-height: 70px;
+			margin-bottom: 30px;
+		}
+	}
+	.info-media-section{
+		&.careers-detail-page{
+			padding: 0 50px 50px;
+		}
+		.tab-content{
+			.info-media-left{
+				height: 220px;
+			}
+
+			.slider-for{
+				.slick-slide{
+					img,
+					video,
+					iframe{
+						height: 400px;
+					}
+				}
+			}
+
+			.slider-nav{
+				.slick-arrow{
+					width: 30px;
+					height: 30px;
+
+					&.slick-next{
+						right: 3%;
+					}
+
+					&.slick-prev{
+						left: 3%;
+					}
+				}
+			}
+		}
+	}
+	.availability-booking-section{
+		.booking-form form{
+			padding: 20px;
+
+			.step-circle{
+				li{
+					line-height: 1;
+					text-align: center;
+					font-size: 13px;
+					padding-bottom: 15px;
+
+					span{
+						position: absolute;
+						bottom: 0;
+					}
+				}
+			}
+			.tab{
+				.radios{
+					.radio{
+						div{
+							width: 120px;
+    						height: 120px;
+
+    						h2{
+    							font-size: 40px;
+    						}
+						}
+						p{
+							font-size: 18px;
+						}
+					}
+				}
+				.your-iternary-div{
+					h5{
+						font-size: 18px;
+					}
+					h4{
+						font-size: 25px;
+					}
+					h3{
+						font-size: 30px;
+					}
+
+					button,
+					a.add-to-cart{
+						width: auto;
+						padding: 12px 15px;
+						font-size: 16px;
+					}
+					ul li span{
+						text-align: left;
+					}
+				}
+				.btn-container{
+					.blue-btn,
+					#prevBtn{
+						width: 190px;
+					}
+				}
+
+				&.accessories-tab{
+					table{
+						tbody{
+							tr{
+								td{
+									.checkmark{
+										width: 20px;
+										height: 20px;
+
+										&:after{
+											left: 6px;
+    										top: 3px;
+										}
+									}
+
+									span.price-blue{
+										font-size: 13px;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				&.confirmation-tab .div-btn-dwnld{
+					.blue-btn,
+					.download-btn{
+						font-size: 14px;
+					}
+				}
+
+				&.payment-tab .cart-payment-method{
+					.payment-card,
+					.card-method,
+					.paypal-method{
+						img{
+							width: 150px;
+						}
+						.payment-select{
+							font-size: 18px;
+
+							span{
+								font-size: 12px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 767px){
+	.inner-banner{
+		h1{
+			font-size: 30px;
+		}
+	}
+	.info-media-section{
+		h2{
+			font-size: 40px;
+			line-height: 50px;
+			padding: 30px 0;
+		}
+		/*careers page responsive code*/
+		&.careers-listing-section{
+			.careers-post{
+				height: auto;
+				padding-bottom: 5px;
+
+				.careers-post-thumbnail{
+					height: auto;
+				}
+			}
+		}
+
+		/*careers details page responsive code*/
+		&.careers-detail-page{
+			.title-btn-container{
+				padding-top: 20px;
+
+				a{
+					position: relative;
+				}
+			}
+		}
+
+		/*boat rental page responsive code*/
+		.tab-content{
+			.info-media-left{
+				height: auto;
+				margin-bottom: 20px;
+			}
+			.slider-for{
+				.slick-slide{
+					img,
+					video,
+					iframe{
+						height: 300px;
+					}
+				}
+			}
+		}
+	}
+	.inner-banner{
+		&.careers-banner{
+			h1{
+				font-size: 70px;
+			}
+		}
+	}
+	.availability-booking-section{
+		.booking-form form{
+
+			.step-circle{
+				li{
+					padding-bottom: 15px;
+
+					span{
+						position: absolute;
+    					bottom: 0;
+					}
+				}
+			}
+			.tab{
+				.your-iternary-div{
+					min-height: auto;
+					padding-bottom: 20px;
+
+					button{
+						clear: both;
+					    display: block;
+					    margin: 0px auto 10px;
+					}
+				}
+				.btn-container{
+					.blue-btn,
+					#prevBtn{
+						width: auto;
+						padding: 10px 20px;
+					}
+				}
+				&.details-tab{
+					.form-group{
+						input,
+						select{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.availability-booking-section{
+		.booking-form{
+			form{
+				.tab.select-dates-tab{
+					.group-dt{
+						input,
+						select#num_of_people{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+	.book-by-stay{
+		.row.bbs-people-date-row{
+			.date {
+			    margin-bottom: 20px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 575px){
+	.inner-banner{
+		h1{
+			line-height: 40px;
+			letter-spacing: 2px;
+		}
+	}
+	.info-media-section{
+		padding: 0 20px 50px;
+		margin-bottom: 50px;
+
+		h2{
+			font-size: 30px;
+			line-height: 40px;
+		}
+		&.careers-listing-section{
+			p{
+				font-size: 14px;
+				line-height: 20px;
+			}
+			.careers-post{
+				.careers-post-info{
+					h3{
+						font-size: 15px;
+					}
+					p{
+						//text-align: justify;
+						text-align: center;
+					}
+				}
+			}
+		}
+		&.careers-detail-page{
+			padding: 0 20px 20px;
+		}
+		.nav-tabs{
+			li{
+				a{
+					padding: 0 7px 5px;
+				}
+			}
+		}
+
+		.tab-content{
+			.slider-for{
+				.slick-slide{
+					img,
+					video,
+					iframe{
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+
+
+	.inner-banner{
+		&.careers-banner{
+			h1{
+				font-size: 40px;
+				line-height: 50px;
+			}
+			.inner-page-btn-wrapper{
+				a:last-child{
+					width: auto;
+					padding: 10px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	.availability-booking-section{
+		.booking-form form{
+			min-width: auto;
+			
+			/*.step-circle{
+				padding-bottom: 0;
+    			flex-direction: column;
+
+    			&:before{
+    				width: 1px;
+				    height: 100%;
+				    bottom: 0;
+				    left: 7px;
+    			}
+
+				li{
+					font-size: 14px;
+					justify-content: left;
+				    align-items: flex-start;
+				    padding-left: 20px;
+				    padding-bottom: 10px;
+
+				    &:last-child{
+				    	padding-bottom: 0;
+				    }
+
+					span{
+						position: absolute;
+    					bottom: 0;
+    					left: 0;
+    					top: 2px;
+					}
+				}
+			}*/
+			.step-circle{
+				justify-content: space-between;
+
+				li{
+					display: none;
+
+					&.active{
+						display: flex;
+
+						& + li{
+							display: flex;
+						}
+					}
+
+					span{
+						bottom: -4px;
+					}
+				}
+			}
+			.tab{
+				.your-iternary-div{
+					min-height: auto;
+					padding-bottom: 20px;
+
+					button{
+						clear: both;
+					    display: block;
+					    margin: 0px auto 10px;
+					}
+				}
+				&.confirmation-tab .div-btn-dwnld{
+					.blue-btn{
+						margin-bottom: 10px;
+					}
+				}
+				&.payment-tab .cart-payment-method{
+					.payment-card,
+					.card-method,
+					.paypal-method{
+						padding: 20px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 480px){
+	.info-media-section{
+		.tab-content{
+			.slider-nav{
+				padding: 0 15%;
+				.slick-arrow{
+					width: 20px;
+					height: 20px;
+
+					&.slick-prev{
+						left: 6%;
+					}
+
+					&.slick-next{
+						right: 6%;
+					}
+				}
+			}
+		}
+	}
+}

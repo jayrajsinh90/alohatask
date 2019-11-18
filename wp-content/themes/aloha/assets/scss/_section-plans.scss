@@ -1,0 +1,806 @@
+.plan-ur-drm-vac {
+    position: relative;
+    text-align: center;
+    color:$white;
+    padding-bottom: 100px;
+
+    &.plan-book-section{
+        .col-bg {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #153140;
+        }
+        .plan-inner-sec{
+            .act-tit-left {
+                border-right: 0; 
+                display: flex;
+                flex-wrap: wrap;
+
+                .activity-title {
+                    flex: 0 0 50%;
+
+                    &:nth-of-type(odd) {
+                        border-right: 2px solid $white;
+                    }
+
+                    &:nth-last-child(2){
+                        a {
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        font-size:70px;
+        font-family: $HelloLucky;
+        letter-spacing: 6.44px;
+        line-height: 121px;
+        color:$blue;
+        text-shadow: 3px 8px 4px rgba($black, 0.2);
+        margin-bottom:30px;
+    }
+    .col-bg {
+        margin-right: -.5px;
+        background: rgba($black,0.9);
+
+        &:last-child{
+            margin-left:-.5px;
+        }
+        .icon-open {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    }
+    .vacation-place {
+        padding-top:50px;
+
+        h4 {
+            margin-top:10px;
+            margin-bottom:20px;
+            color: $white;
+        }
+        img {
+            height: 63px;
+        }
+    }
+    .plan-inner-sec {
+        padding:35px 4px 60px;
+        .col-sm-6 {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        .activity-title {
+            &:last-child a{
+                border-bottom: 0px solid ;
+            }
+            a{
+                display: block;
+                padding: 60px 0px 50px;
+                position: relative;
+                overflow: hidden;
+                border-bottom: 2px solid ;
+                border-color: $white;
+                img{
+                    display: none;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    top: 0;
+                }
+                h4{
+                    height: 56px;
+                    color:$white;
+                    z-index: 9;
+                    position: relative;
+                    margin: 0;
+                    padding: 0 10px;
+                    font-size: 22px;
+                }
+                &:hover img{
+                    display:block;
+                }
+                &:hover::after {
+                    content:"";
+                    background-image: url('../images/plus.png');
+                    background-size: 50%;
+                    background-position: center;
+                    background-repeat:no-repeat;
+                    margin-left:auto;
+                    margin-right:auto;
+                    height: 30px;
+                    width:30px;
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    top: 4px;
+                }
+            }
+        }
+        .act-tit-left {
+            border-right: 2px solid ;
+        }
+        .div-foodtrucks {
+            display: table;
+            width: 100%;
+            border-bottom: 2px solid $white;
+            padding: 80px 0px;
+
+            h4{
+                color: $white;
+                text-transform: uppercase;
+            }
+            a{
+                color:$white;
+            }
+            &:last-child {
+                border-bottom: 0px;
+            }
+        }
+    }
+    .indulge-inner-sec {
+        padding: 35px 4px 0px;
+    }
+    .view-more-btn {
+        position: absolute;
+        bottom: -70px;
+        right: 0;
+        left: 0;
+        button {
+            background-color: $green;
+            border: 1px solid $green;
+            color:$white;
+            /*padding:13px 40px;*/
+            height: 50px;
+            margin:20px 0px 0px;
+            -webkit-transition: all .5s ease, color .2s ease;
+            transition: all .5s ease, color .2s ease;
+            padding: 0;
+            display: inline-block;
+            line-height: 1;
+            &:hover{
+                //background-color: $white;
+                box-shadow: inset 300px 0 0 0 $white;
+                color:$green;
+
+                a{
+                    color: $green;
+                }
+            }
+
+            a{
+                color: $white;
+                padding: 15px 60px;
+                display: inline-block;
+                letter-spacing: 4px;
+
+                &:hover{
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+.indulge-plan-sec {
+    .view-more-btn {
+        position: static;
+    }
+}
+.booking-made-easy {
+    text-align: center;
+    > h1 {
+        font-size:70px;
+        font-family: $HelloLucky;
+        letter-spacing: 6.44px;
+        line-height: 121px;
+        color: $green;
+        text-shadow: 3px 8px 4px rgba($black, 0.2);
+        margin-bottom: 50px;
+    }
+    .booking-inner-sec {
+        background-color: $blue;
+        color:$white;
+        padding:20px 35px 50px;
+        margin-bottom: 60px;
+        a{
+            display:block;
+            color:$white;
+            border:1px solid $white;
+            padding:12px 10px;
+            margin:10px auto 30px;
+            height:50px;
+            &:hover {
+                background-color: $white;
+                color:$blue;
+            }
+        }
+    }
+}
+.clubaloha-sign-in {
+    font-size:18px;
+    padding: 65px 0px;
+    clear: both;
+    .club-bg-light {
+        background-color: rgba(255, 255, 255, .8);
+        padding: 25px 15px 30px;
+        margin-left: 200px;
+        position: relative;
+        >img {
+            position: absolute;
+            left: -100px;
+            top: -10px;
+            height: 230px;
+    
+        }
+        h1{
+            color:$blue;
+            font-size:50px;
+            float:right;
+            span{
+                color:$green;
+            }
+        }
+        .clubaloha-img {
+            float:right;
+            margin-right: 20px;
+        }
+        p{
+            width: 100%;
+            color:$blue;
+            font-weight:500;
+            float:left;
+            margin-bottom: 0px;
+        }
+        .club-form {
+            margin-top:40px;
+            position: relative;
+            /*&::after{
+                content:'';
+                background-image: url(../images/cta.png);
+                background-repeat: no-repeat;
+                background-position:center;
+                display: block;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                text-align: center;
+            }*/
+            form{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .curve-img {
+                text-align: center;
+                img{
+                    position: relative;
+                    z-index: 9;
+                    height: 70px;
+                }
+            }
+            input{
+                height:67px;
+                padding: 0px 35px;
+                border-radius:5px;
+                &:focus{
+                    outline: none;
+                }
+                &[type="email"] {
+                    border:1px solid $blue;
+                    float:right;
+                    width:70%;
+                    border-right-color:$white;
+                }
+                &[type="submit"] {
+                    color:$white;
+                    background-color: $green;
+                    border:1px solid $white;
+                    width:50%;
+                    border-left-color:$green;
+                    &:hover {
+                        color:$blue;
+                        //background-color: $white;
+                        //border-color:$green;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.curved-email-div {
+    width:100%;
+    float:right;
+    position: relative;
+    display:inline-block;
+    .curve-div {
+        position: absolute;
+        right: -21px;
+        top: 0px;
+        bottom: 0;
+        height: 67px;
+        width: 60px;
+        border-top: 1px solid #1B54A5;
+        border-bottom: 1px solid #1B54A5;
+        overflow: hidden;
+        .square-div {
+            position: absolute;
+            right: -34px;
+            top: -1px;
+            height: 67px;
+            width: 46px;
+            border: 0px solid blue;
+            position: relative;
+            box-shadow: inset 0px 0px 0px 6px #ffffff;
+            box-sizing: border-box;
+            border-radius: 20p;
+            border-radius: 4px;
+            .circle-div{
+                height: 82px;
+                width: 66px;
+                border: 16px solid #ffffff;
+                background: transparent;
+                border-radius: 56px;
+                position: absolute;
+                top: -1px;
+                bottom: 0;
+                left: -10px;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }    
+}
+
+.curved-submit-div {
+    float:none;
+    .curve-div {
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+        left: -22px;
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        .square-div {
+            box-shadow: inset 0px 0px 0px 6px $green;
+            .circle-div {
+                border-color: $green;
+            }
+        }
+    }
+}
+
+/*@media (min-width:768px) and (max-width:867px) {
+
+.clubaloha-sign-in  {
+    .club-bg-light {
+        padding: 20px 25px 25px;
+        .club-form {
+            .curve-img{
+                display: inline-block;
+                img{
+                    height: 40px;
+                    margin-top: 0px;
+                    margin-left: -3px;
+                }
+            } 
+        }
+    }
+}
+}
+
+@media (min-width:868px) {
+
+    .clubaloha-sign-in  {
+        .club-bg-light {
+            padding: 20px 25px 25px;
+            .club-form {
+                .curve-img{
+                    display: inline-block;
+                    img{
+                        height: 40px;
+                        margin-top: 0px;
+                        margin-left: -3px;
+                    }
+                } 
+            }
+        }
+    }
+}*/
+
+/**Responsive**/
+
+
+
+@media(max-width:767px) {
+
+.plan-ur-drm-vac{
+    padding-bottom: 0px;
+    .col-bg{
+        margin-bottom:90px;
+    }
+    .plan-inner-sec {
+        padding: 0 4px 60px;
+        .act-tit-left {
+            border-right:0px;
+            .activity-title a {
+                border-bottom:2px solid $white;
+            }
+        }
+        .activity-title a {
+            width:70%;
+            margin-left:auto;
+            margin-right:auto;
+            padding: 50px 0px 50px;
+
+            h4{
+                font-size: 20px;
+                margin: 0;
+            }
+        }
+    }
+} 
+
+.clubaloha-sign-in {
+    text-align: center;
+    .club-bg-light{
+        margin-left:0px;
+        >img{
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: -50px;
+            height: 130px;
+        }
+        h1{
+            float:none;
+            margin-top: 50px;
+        }
+        .clubaloha-img {
+            float:none;
+            height: 40px;
+            margin-top: 80px;
+            margin-right:0px;
+            margin-bottom: 20px;
+        }
+        p{
+            float:none;
+        }
+        .club-form {
+            input{
+                &[type="email"]{
+                    margin-bottom: 15px;
+                    float:none;
+                    border-right-color:$blue;
+                }
+                &[type="submit"]{
+                    border-left-color:$green;
+                }
+            }
+            .curve-img img {
+                display: none;
+            } 
+        }
+    } 
+}
+.curve-div {
+    display: none;
+}
+}
+
+@media (max-width: 575px) {
+    .plan-ur-drm-vac {
+        h1{
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+    .booking-made-easy {
+        > h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+    .clubaloha-sign-in {
+        .club-bg-light {
+            .club-form {
+                input[type="email"] {
+                    font-size:15px;
+                    padding: 0px 16px;
+                }
+                input[type="submit"] {
+                    font-size:15px;
+                    padding: 0px 14px;
+                }
+            }
+        }
+    }
+    .plan-ur-drm-vac{
+        .plan-inner-sec{
+            .activity-title{
+                a{
+                    padding: 30px 0;
+                    width: 90%;
+                    h4{
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width:991px) {
+
+    .booking-made-easy{
+    .booking-inner-sec {
+        padding: 10px 25px 40px;
+        a{
+            font-size:12px;
+            padding: 15px 10px;
+        }
+    }
+}
+
+.clubaloha-sign-in {
+    font-size: 14px;
+    .club-bg-light {
+        margin-left: 130px;
+        padding: 20px 15px 25px;
+        >img{
+            top: -5px;
+            height: 160px;
+        }
+        h1{
+            font-size:28px;
+        }
+        .clubaloha-img {
+            height: 30px;
+        }
+        .club-form {
+            margin-top:15px;
+            input{
+                height: 40px;;
+                &[type="email"] {
+                    width:70%;
+                }
+            }
+            .curve-img img {
+                height:42px;
+            }
+        }
+    }
+}
+.plan-ur-drm-vac {
+    .plan-inner-sec {
+        .activity-title {
+            a{
+                padding: 20px 0px 10px;
+                h4 {
+                    font-size:14px;
+                    margin-bottom: 0px;
+                    padding: 10px 0px;
+                }
+            } 
+        } 
+    }
+}
+
+.curved-email-div {
+    .curve-div {
+        height:40px;
+        .square-div{
+            height: 40px;
+            .circle-div{
+                height: 40px;
+            }
+        }
+    }
+}
+.curved-submit-div {
+    .curve-div{
+        
+    }
+}
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+    .clubaloha-sign-in{
+        .club-bg-light {
+            padding: 25px 25px 30px;
+            > img {
+                height: 200px;
+            }
+            h1{
+                font-size: 40px;
+            }
+            .club-form {
+                margin-top: 20px;
+                input {
+                    height:50px;
+                }
+                .curve-img img {
+                    height: 50px;
+                    margin-top: 0px;
+                }
+            }
+            .clubaloha-img {
+                height: 35px;
+            }
+        }
+    }
+    .curved-email-div {
+        .curve-div {
+            height: 50px;
+            .square-div {
+                height: 50px;
+                .circle-div{
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+
+    .clubaloha-sign-in {
+        .club-bg-light{
+            .club-form{
+                .col-md-5 {
+                    padding: 0px;
+                    -ms-flex: 0 0 45%;
+                    flex: 0 0 45%;
+                    max-width: 45%;
+                }
+                .col-md-2 {
+                    padding: 0px;
+                    -ms-flex: 0 0 10%;
+                    flex: 0 0 10%;
+                    max-width: 10%;
+                }
+            }
+        }
+    }
+}
+
+.email-curved {
+    display: inline-block;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 0 solid $white;
+        border-right-width: 33px;
+        border-left-width: 32px;
+        border-bottom: 33px solid transparent;
+        transform: rotate(270deg);
+        top: 26%;
+        left: 96%;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 98%;
+        height: 100%;
+        width: 42px;
+        border-top: 1px solid $blue;
+        border-bottom: 1px solid $blue;
+    }
+}
+
+.submit-curved {
+    display: inline-block;
+    position: relative;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0px;
+        border: 0 solid $green;
+        border-right-width: 33px;
+        border-left-width: 32px;
+        border-bottom: 33px solid transparent;
+        transform: rotate(90deg);
+        top: 26%;
+        right: 96%;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 98%;
+        height: 100%;
+        width: 42px;
+        border-top: 1px solid $white;
+        border-bottom: 1px solid $white;
+    }
+}
+
+@media (max-width:767px) {
+    .clubaloha-sign-in .club-bg-light .club-form form {
+        display: table;
+        width:100%;
+    }
+    .curved-email-div {
+        display:table;
+        width:100%;
+        input{
+            width:100%;
+        }
+    }
+    .email-curved, .submit-curved {
+        &:after{
+            display:none;
+        }
+        &:before{
+            display:none;
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .email-curved {
+        &:after{
+            
+            border-right-width: 19px;
+            border-left-width: 19px;
+            border-bottom: 20px solid transparent;
+        }
+        &:before {
+            width: 22px;
+        }
+    }
+    .submit-curved {
+        &:after{
+            
+            border-right-width: 19px;
+            border-left-width: 19px;
+            border-bottom: 20px solid transparent;
+        }
+        &:before {
+            width: 22px;
+        }
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .email-curved {
+        &:after{
+            left: 95%;
+            border-right-width: 24px;
+            border-left-width: 24px;
+            border-bottom: 26px solid transparent;
+            top: 23%;
+        }
+        &:before {
+            width: 33px;
+        }
+    }
+    .submit-curved {
+        &:after{
+            right: 95%;
+            border-right-width: 24px;
+            border-left-width: 24px;
+            border-bottom: 26px solid transparent;
+            top: 23%;
+        }
+        &:before {
+            width: 33px;
+        }
+    }
+}

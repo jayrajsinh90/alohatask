@@ -1,0 +1,569 @@
+.inner-banner{
+	&.explore-banner{
+		background-position: unset;
+    	background-size: unset;
+    	padding-bottom: 160px;
+
+		h1{
+			font-size: 90px;
+		    letter-spacing: 8.28px;
+		    line-height: 121px;
+		}
+	}
+}
+
+.explore-content-sec{
+	position: relative;
+
+	&:before{
+		content: "";
+	    position: absolute;
+	    width: 100%;
+	    /*height: calc(100% - 100px);*/
+	    background: #f7f5f5;
+	    /*top: 100px;*/
+	    height: 100%;
+	    top: 0;
+	}
+
+	.container{
+		position: relative;
+	}
+
+	ul{
+		&.nav-tabs {
+		    padding: 40px 30px 30px 30px;
+		    background: $green;
+		    justify-content: center;
+		    margin-top: -110px;
+
+		    li{
+		    	margin: 0 10px;
+    			text-align: center;
+
+    			a{
+    				cursor: pointer;
+
+    				div{
+    					height: 100px;
+					    width: 137px;
+					    border: 1px solid $white;
+					    border-radius: 10px;
+					    margin: auto;
+					    display: flex;
+					    align-items: center;
+					    justify-content: center;
+    				}
+
+    				span{
+    					display: inline-block;
+					    color: $white;
+					    font-family: $Montserrat;
+					    font-size: 16px;
+					    font-weight: 600;
+					    line-height: 19px;
+					    width: 100px;
+					    max-width: 100%;
+					    margin-top: 20px;
+    				}
+
+    				&.active{
+    					div{
+    						background-color: $blue;
+    					}
+    				}
+    			}
+		    }
+		}
+	}
+
+	.tab-content{
+		padding: 50px 0;
+
+		h2{
+			text-align: center;
+		    margin: 0;
+		    color: $blue;
+		    font-family: $HelloLucky;
+		    font-size: 60px;
+		    letter-spacing: 5.52px;
+		    line-height: 72px;
+		}
+	}
+
+	.map-section {
+	    position: relative;
+	    max-width: 80%;
+	    margin: auto;
+
+	    .map-img{
+	    	img {
+			    max-width: 100%;
+			    display: block;
+			}
+	    }
+
+	    .map-overlay-content {
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    height: 100%;
+
+		    .location-div{
+		    	position: relative;
+
+		    	&.kapalua-west-div{
+		    		a{
+					    top: 35px;
+					    left: 60px;
+		    		}
+
+		    		.info-pop-up{
+		    			bottom: -40px;
+    					left: 105px;
+		    		}
+		    	}
+
+		    	&.kaanapali-west-div{
+		    		a {
+					    top: 135px;
+					    left: 20px;
+					}
+
+					.info-pop-up{
+		    			bottom: -140px;
+    					left: 65px;
+		    		}
+		    	}
+
+		    	&.lahaina-west-div{
+		    		a {
+					    top: 190px;
+					    left: 30px;
+					}
+
+					.info-pop-up{
+		    			bottom: -190px;
+    					left: 75px;
+		    		}
+		    	}
+
+		    	&.oluwala-west-div{
+		    		a {
+					    top: 270px;
+    					left: 100px;
+					}
+
+					.info-pop-up{
+		    			bottom: -272px;
+    					left: 140px;
+		    		}
+		    	}
+
+		    	&.maalaea-south-div{
+		    		a {
+					    top: 290px;
+    					left: 235px;
+					}
+
+					.info-pop-up{
+		    			bottom: -292px;
+    					left: 280px;
+		    		}
+		    	}
+
+		    	&.kihei-south-div{
+		    		a {
+					    top: 330px;
+    					left: 310px;
+					}
+
+					.info-pop-up{
+		    			bottom: -342px;
+    					left: 360px;
+		    		}
+		    	}
+
+		    	&.wailea-south-div{
+		    		a {
+					    top: 390px;
+    					left: 320px;
+					}
+
+					.info-pop-up{
+		    			bottom: -395px;
+    					left: 360px;
+		    		}
+		    	}
+
+		    	&.makena-south-div{
+		    		a {
+					    top: 450px;
+    					left: 340px;
+					}
+
+					.info-pop-up{
+		    			bottom: -455px;
+    					left: 385px;
+		    		}
+		    	}
+
+		    	&.kipahulu-east-div{
+		    		a {
+					    top: 460px;
+    					right: 120px;
+					}
+
+					.info-pop-up{
+		    			bottom: -455px;
+    					right: -155px;
+		    		}
+		    	}
+
+		    	&.hana-east-div{
+		    		a {
+					    top: 330px;
+    					right: 40px;
+					}
+
+					.info-pop-up{
+		    			bottom: -325px;
+    					right: -190px;
+		    		}
+		    	}
+
+		    	&.keanae-east-div{
+		    		a {
+					    top: 210px;
+    					right: 230px;
+					}
+
+					.info-pop-up{
+		    			bottom: -210px;
+    					right: -60px;
+		    		}
+		    	}
+
+		    	&.piiholo-upcountry-div{
+		    		a {
+					    top: 230px;
+    					right: 410px;
+					}
+
+					.info-pop-up{
+		    			bottom: -220px;
+    					right: 140px;
+		    		}
+		    	}
+
+		    	&.makawao-upcountry-div{
+		    		a {
+					    top: 210px;
+    					right: 430px;
+					}
+
+					.info-pop-up{
+		    			bottom: -210px;
+    					right: 140px;
+		    		}
+		    	}
+
+		    	&.pukalini-upcountry-div{
+		    		a {
+					    top: 230px;
+    					right: 460px;
+					}
+
+					.info-pop-up{
+		    			bottom: -230px;
+    					right: 170px;
+		    		}
+		    	}
+
+		    	&.kula-upcountry-div{
+		    		a {
+					    top: 290px;
+    					right: 440px;
+					}
+
+					.info-pop-up{
+		    			bottom: -290px;
+    					right: 155px;
+		    		}
+		    	}
+
+		    	&.haiku-east-div{
+		    		a {
+					    top: 140px;
+    					right: 440px;
+					}
+
+					.info-pop-up{
+		    			bottom: -150px;
+    					right: 140px;
+		    		}
+		    	}
+
+		    	&.paia-north-div{
+		    		a {
+					    top: 160px;
+    					right: 495px;
+					}
+
+					.info-pop-up{
+		    			bottom: -160px;
+    					right: 210px;
+		    		}
+		    	}
+
+		    	&.puunene-north-div{
+		    		a {
+					    top: 210px;
+    					left: 315px;
+					}
+
+					.info-pop-up{
+		    			bottom: -210px;
+    					left: 350px;
+		    		}
+		    	}
+
+		    	&.kaluhui-north-div{
+		    		a {
+					    top: 180px;
+    					left: 295px;
+					}
+
+					.info-pop-up{
+		    			bottom: -180px;
+    					left: 330px;
+		    		}
+		    	}
+
+		    	&.waluku-north-div{
+		    		a {
+					    top: 160px;
+    					left: 255px;
+					}
+
+					.info-pop-up{
+		    			bottom: -160px;
+    					left: 290px;
+		    		}
+		    	}
+
+		    	&.waihee-north-div{
+		    		a {
+					    top: 115px;
+    					left: 230px;
+					}
+
+					.info-pop-up{
+		    			bottom: -115px;
+    					left: 265px;
+		    		}
+		    	}
+
+		    	&.waikapu-north-div{
+		    		a {
+					    top: 200px;
+    					left: 225px;
+					}
+
+					.info-pop-up{
+		    			bottom: -200px;
+    					left: 260px;
+		    		}
+		    	}
+
+		    	& > a{
+		    		position: absolute;
+					display: inline-block;
+		    		cursor: pointer;
+		    		
+		    		svg{
+		    			padding: 6px;
+		    			border-radius: 50%;
+		    			box-shadow: 0 2px 18px 0 rgba($black,0.5);
+
+		    			&.fa-times{
+		    				height: 50px;
+						    width: 50px;
+						    border: 1px solid $white;
+						    background-color: $green;
+						    color: $white;
+						    z-index: 9;
+    						position: relative;
+		    			}
+
+		    			&.fa-plus {
+						    height: 35px;
+						    width: 35px;
+						    border: 1px solid $blue;
+						    background-color: $white;
+						    color: $blue;
+						    position: relative;
+						    left: 8px;
+						}
+		    		}
+		    	}
+
+		    	.info-pop-up{
+		    		display: none;
+		    		position: absolute;
+				    padding: 30px;
+				    width: 300px;
+				    /*width: 494px;*/
+				    max-width: 100%;
+				    border-radius: 6px;
+				    background-color: $green;
+				    color: $white;
+				    flex-direction: column;
+				    justify-content: center;
+				    box-shadow: 0 1px 5px 0 rgba($black, 0.5);
+				    z-index: 9;
+
+				    h4{
+				    	font-size: 22px;
+				    }
+
+				    a{
+				    	position: relative;
+				    	left: 0;
+				    	top: 0;
+				    	display: inline-block;
+
+				    	&.blue-btn{
+			    		    padding: 10px 30px;
+						    font-size: 16px;
+						    letter-spacing: unset;
+						    margin-right: 10px;
+				    	}
+
+				    	&.learn-more-btn{
+				    		color: $white;
+						    font-size: 18px;
+						    letter-spacing: 3px;
+						    font-weight: 500;
+						    text-decoration: none;
+
+						    svg{
+						    	display: inline-block;
+    							margin-right: 5px;
+						    }
+				    	}
+				    }
+
+				    ul{
+				    	padding: 0;
+					    margin: 0;
+					    list-style-type: none;
+
+				    	li{
+				    		line-height: 1.428;
+
+				    		a{
+				    			color: $white;
+							    font-size: 14px;
+							    line-height: 1;
+				    		}
+				    	}
+				    }
+		    	}
+		    }
+		}
+	}
+}
+
+.booking-made-easy{
+	&.explore-page-booking{
+		background-color: #f7f5f5;
+
+		& > h1{
+			color: $green;
+		}
+	}
+}
+
+/*responsive code*/
+@media all and (max-width: 1199px){
+	.explore-content-sec{
+		.map-section{
+			max-width: 100%;
+		}
+		ul.nav-tabs{
+			li{
+				a{
+					div{
+						height: 70px;
+    					width: 97px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 991px){
+	.inner-banner{
+		&.explore-banner{
+			background-position: center;
+			h1{
+				font-size: 60px;
+				line-height: 70px;
+			}
+		}
+	}
+
+	.explore-content-sec{
+		.tab-content h2{
+			font-size: 40px;
+		}
+		.map-section{
+			/*width: 936px;*/
+			overflow-x: auto;
+			padding-bottom: 50px;
+
+			.map-img,
+			.map-overlay-content{
+				width: 936px;
+			}
+		}
+		ul.nav-tabs li{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+@media all and (max-width: 767px){
+	.inner-banner{
+		&.explore-banner{
+			background-position: center;
+    		background-size: cover;
+			h1{
+				font-size: 45px;
+				letter-spacing: 4px;
+			}
+		}
+	}
+	.explore-content-sec{
+		ul.nav-tabs{
+			padding: 40px 10px 30px 10px;
+		}
+		.tab-content h2{
+			font-size: 40px;
+		}
+	}
+}
+
+@media all and (max-width: 575px){
+	.inner-banner{
+		&.explore-banner{
+			h1{
+				font-size: 35px;
+				line-height: 50px;
+			}
+		}
+	}
+}

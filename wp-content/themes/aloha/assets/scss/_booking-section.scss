@@ -1,0 +1,132 @@
+.booking-section {
+    padding: 50px 0;
+
+    h2{
+    	text-align: center;
+	    padding-bottom: 50px;
+	    margin: 0;
+	    font-family: $HelloLucky;
+	    color: $green;
+	    font-size: 70px;
+	    letter-spacing: 6.44px;
+    }
+
+    .booking-form-section {
+	    background-color: $blue;
+	    padding: 50px 0;
+
+	    .form-title-div{
+	    	position: relative;
+
+	    	p{
+	    		margin: 0;
+			    position: absolute;
+			    font-size: 20px;
+			    font-weight: 600;
+			    letter-spacing: 2.5px;
+			    color: $white;
+			    text-transform: uppercase;
+	    	}
+
+	    	h3{
+	    		text-align: center;
+			    margin: 0;
+			    font-size: 34px;
+			    letter-spacing: 1.42px;
+			    color: $white;
+			    font-family: $introrustg;
+	    	}
+	    }
+
+	    form{
+	    	margin: 0 auto;
+		    width: 90%;
+		    min-width: 300px;
+		    
+	    	.step-indicators {
+			    margin: 50px 0;
+
+			    ul{
+			    	display: flex;
+				    padding: 0;
+				    margin: 0;
+				    list-style-type: none;
+				    justify-content: space-around;
+				    text-align: center;
+				    position: relative;
+
+				    &:before{
+				    	position: absolute;
+					    content: "";
+					    height: 1px;
+					    width: 100%;
+					    background: $white;
+					    bottom: 15px;
+				    }
+
+				    li{
+
+				    	&.step{
+				    		p{
+					    		font-size: 14px;
+							    font-weight: 500;
+							    letter-spacing: 0.47px;
+							    color: $white;
+					    	}
+
+					    	span{
+					    		height: 15px;
+						      	width: 15px;
+						      	margin: 0 2px;
+						      	background-color: #bbbbbb;
+					      		border: none;  
+						      	border-radius: 50%;
+						      	display: inline-block;
+					    	}
+
+					    	&.active{
+					    		span{
+					    			opacity: 1;
+					    		}
+					    	}
+
+					    	&.finish{
+					    		span{
+					    			background-color: #4CAF50;
+					    		}
+					    	}
+				    	}
+
+				    	
+				    }
+			    }
+			}
+	    }
+	}
+}
+
+.bbs-yuordetails{
+	.your-details{
+		.address-sub-fields-div{
+			float: left;
+			width: 100%;
+
+			.field_mandatory {
+			    float: left;
+			    width: 100%;
+			    margin: 0 0 10px 5px;
+			}
+		}
+		.name-div{
+			width: 100%;
+		}
+		.agree-check{
+			float: left;
+			width: 100%;
+
+			> h4{
+				color: $white;
+			}
+		}
+	}
+}

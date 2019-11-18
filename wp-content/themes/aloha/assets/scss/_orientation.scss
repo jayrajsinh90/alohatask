@@ -1,0 +1,48 @@
+/* Orientation and Ui fixes mentioned in testing*/
+
+@media screen and (orientation:landscape) {
+  /* Landscape styles */
+}
+
+@media screen and (orientation:portrait) {
+
+}
+
+@media only screen and  (max-device-width : 991px) and (min-device-width : 580px) and (orientation : landscape) {
+
+    .availability-booking-section {
+      .booking-form {
+        form {
+          .step-circle {
+            li{
+              line-height: 2;
+            }
+          }
+        }
+      }
+    }
+
+}
+
+@media only screen and  (max-device-width : 991px) and (min-device-width : 580px) and (orientation : portrait) {
+
+  .availability-booking-section {
+    .booking-form {
+      form {
+        .step-circle {
+          li{
+            line-height: 2;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+

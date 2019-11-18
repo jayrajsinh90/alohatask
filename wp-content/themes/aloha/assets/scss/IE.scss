@@ -1,0 +1,29 @@
+/* IE10+ CSS styles go here */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .form-activity-choose .nav-tabs{
+    display: -ms-flexbox;
+    margin:auto;
+  }
+  .form-activity-choose .nav-tabs li{
+    padding:0px 5px!important;
+    flex:0 0 32% !important;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .home-indulge-sec .indulge-tabs li{
+    flex:0 0 31%;
+  }
+  .info-media-section.careers-listing-section .careers-post .careers-post-info p{
+    height:160px;
+  }
+
+}
+
+
+
+/*for IE8 */
+input[type="submit"]:focus, input[type="button"]:focus
+{
+  outline : none;
+}

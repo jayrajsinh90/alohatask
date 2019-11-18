@@ -1,0 +1,36 @@
+/* ..***** Imports all theme css files to generate master.css  *****.. */
+
+
+//Check once functions.php and enable
+@import url('../css/bootstrap.min.css');
+@import url('../css/aos.css');
+@import url('../css/jqueryUI.css');
+@import url('../css/slick.css');
+@import url('../css/slick-theme.css');
+
+
+
+@import "colors";    /* Define theme color -End */
+@import "common";    /* common components -End */
+@import "header";    /* Only header style -End */
+@import "home"; /* Home Page code */
+@import "footer";    /* Only footer for all pages -End */
+@import "inner-pages";
+@import "register-login";
+@import "privacy-policy";
+@import "contact-us";
+@import "booking-section";
+@import "shop";
+@import "user-dashboard";
+@import "override-bootstrap";    /* Override Bootstrap Components */
+@import "explore";
+@import "orientation";
+@import "IE";
+
+/**/
+@import "section-plans";
+@import "section-bookbystay";
+@import "form-activity-choose";
+@import "screen-eat-drink";
+@import "cart";
+@import "interact";

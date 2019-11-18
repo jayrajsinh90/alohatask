@@ -1,0 +1,702 @@
+.your-cart-sec {
+    background-color: #F8F8F7;
+    float: left;
+    width: 100%;
+    position: relative;
+    .your-cart-form {
+        background-color: $white;
+        padding: 50px 0px;
+        box-shadow: 0 0 2px -1px;
+        margin-top: -100px;
+        margin-bottom: 50px;
+        .heading-cart {
+            text-align: center;
+            padding: 0px 40px;
+            > h1{
+                text-align: center;
+                color:$blue;
+                font-family:$HelloLucky;
+                font-size: 40px;
+            }
+            > img{
+                margin-top: 30px;
+            }
+            .return-btn {
+                display: table;
+                margin: 40px auto 0px;
+                background: $green;
+                color: $white;
+                font-weight: 600;
+                padding: 8px 18px;
+                border:1px solid $green;
+                &:hover{
+                    background: $white;
+                    color: $green;
+                }
+            }
+        }
+        #cartForm {
+            margin: auto;
+            padding: 40px;
+            min-height: 300px;
+            .step-circle {
+                display: table;
+                width:100%;
+                list-style: none;
+                border-bottom:1px solid $grey;
+                padding-left: 0px;
+                li{
+                    font-size:14px;
+                    padding: 20px 0px;
+                    position: relative;
+                    display: table-cell;
+                    text-align: center;
+                    .step {
+                        position: absolute;
+                        right: 0;
+                        left: 0;
+                        bottom: -8px;
+                        margin: auto;
+                        height: 12px;
+                        width: 12px;
+                        background-color: $grey;
+                        border: none;  
+                        border-radius: 50px;
+                        display: block;
+                        float: left;
+                        border-bottom:1px solid $white;
+                        &.active{
+                            background-color: $blue;
+                            height: 16px;
+                            width: 16px;
+                        }
+                        &.finish {
+                            background-color: #4CAF50;
+                        }
+                    }
+                }
+            }
+            .product-list {
+                padding-top: 40px;
+                table{
+                    width:100%;
+                    thead{
+                        background-color:rgba(59,176,75,0.3);
+                        font-size:12px;
+                        color:$green;
+                        border-radius: 10px;
+                        padding: 10px;
+                        border-radius:5px;
+                        tr{
+                            th{
+                                padding: 10px;
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            border-bottom:1px solid $black;
+                            td{
+                                padding:20px 0px;
+                                font-size:13px;
+                            }
+                        }
+                        .product-name {
+                            color:$blue;
+                            font-weight:bold;
+                        }
+                        .adventure-time {
+                            font-size:12px;
+                            width:100%;
+                            display:table;
+                        }
+                        .price-blue {
+                            color:$blue;
+                            font-weight: bold;
+                        }
+                        .dlt-symbol a {
+                            /*font-size: 15px;
+                            border: 1px solid $black;
+                            text-align: center;
+                            padding: 3px;
+                            width: 22px;
+                            height: 22px;
+                            margin: auto;
+                            display: block;
+                            border-radius: 30px;*/
+                        }
+                    }
+                }
+                .nxt-admr{
+                    padding: 50px 0px;
+                    button{
+                        color:$white;
+                        font-size:14px;
+                        font-weight: bold;
+                        background-color:$blue;
+                        border: 1px solid $blue;
+                        height:45px;
+                        padding: 0px 40px;
+                        width: 220px;
+                        &:hover{
+                            background-color: $white;
+                            color:$blue;
+                        }
+                    }
+                    .add-more-btn{
+                        color:$black;
+                        border:1px solid $black;
+                        border-radius:5px;
+                        background-color: $white;
+                    }
+                }
+            }
+            .tab {
+                display: none;
+                input {
+                    padding: 10px;
+                    width: 100%;
+                    font-size: 17px;
+                    font-family: Raleway;
+                    border: 1px solid #aaaaaa;
+                    &.invalid {
+                        background-color: #ffdddd;
+                    }
+                }
+            }
+            #prevBtn {
+                background-color: #bbbbbb;
+            }
+        } 
+    }
+}
+
+/***Common-Your-Details-Start***/
+
+.your-details {
+    display: table;
+    width:100%;
+    font-size:14px;
+    .form-group {
+        width:50%;
+        float:left;
+        padding: 0px 5px;
+        input{
+            height:50px;
+            padding:15px;
+            font-size:14px;
+        }
+        select {
+            width:100%;
+            height:50px;
+            padding:15px;
+            border-radius: .25rem;
+            font-size:14px;
+        }
+    }
+    .address-div {
+        width:100%;
+    }
+    .agree-check {
+        display: table;
+        padding-left: 7px;
+        padding-top: 15px;
+        > h4{
+            font-size: 16px;
+            font-weight: 600;
+            color: $blue;
+        }
+        input[type="checkbox"]{
+            width:auto!important;
+            margin-right:10px;
+        }
+    }
+}
+
+/***Common-Your-Details-End***/
+
+/***Common-Confirmation-Start***/
+
+/***Common-Confirmation-Start***/
+
+.confirmation-tab {
+    text-align: center;
+    padding-bottom: 40px;
+    h5{
+        display: table;
+        padding: 20px 40px;
+        margin: 0px auto 20px;
+        border-bottom: 2px solid $border-grey;
+    }
+    ul{
+        display: table;
+        margin: auto;
+        list-style: none;
+        padding: 20px 0px 30px;
+        li{
+            float: left;
+            border-right: 1px solid black;
+            padding: 0px 10px;
+            &:last-child{
+                border-right:0px;
+            }
+            span{
+                font-weight: 600;
+            }
+        }
+    }
+    .div-btn-dwnld {
+        > a{
+            font-weight: bold;
+            padding: 12px 20px;
+            border:1px solid;
+            margin: 5px;
+        }
+        .start-over {
+            display: inline-block;
+            color:$white;
+            background-color: $blue;
+            border-color:$blue;
+            &:hover{
+                color:$blue;
+                background-color: $white;
+            }
+        }
+        .download-btn{
+            display: inline-block;
+            color:$black;
+            border-color:$black;
+            border-radius:3px;
+            &:hover{
+                color:$white;
+                background-color: $black;
+            }
+        }
+    }
+}
+
+/***Common-Confirmation-End***/
+
+/***Common-Cart-Payment-Method-Start***/
+
+.cart-payment-method {
+    border:1px solid $border-grey;
+    input {
+        height: 50px;
+    }
+    .payment-paypal, #paypal-bg{
+        padding: 40px 25px;
+        display: table;
+        width: 100%;
+        .payment-paypal-radio {
+            display: table;
+            width:100%;
+        }
+        .paypal-proceed a{
+            background: $blue;
+            color: $white;
+            padding: 12px;
+            display: inline-block;
+            margin: 10px 0px 0px;
+        }
+    }
+    input[type="radio"] {
+        width: 20px;
+        height: 20px;
+    }
+    img{
+        float:right;
+        margin-top: 10px;
+    }
+    .payment-card, #card-bg{
+        .payment-card-radio {
+            padding: 40px 25px;
+            display: table;
+            width: 100%;
+        }
+        .input-card-num{
+            padding: 0px 20px 50px;
+            display: table;
+            width: 100%;
+            label{
+                width:50%;
+                float:left;
+                padding: 0px 5px;
+            }
+        }
+        input{
+            width:100%;
+        }
+        .payment-input {
+            > label{
+                width:100%;
+                padding: 0px 25px;
+            }
+        }
+    }
+}
+
+/***Common-Cart-Payment-Method-End***/
+
+/***Common-Cart-Summary-Start***/
+
+.cart-summary {
+    position: relative;
+    color:$white;
+    background-color: $green;
+    padding:10px 0px;
+    &::before{
+        content:'';
+        position: absolute;
+        top: -7px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-left: solid 7px transparent;
+        border-right: solid 7px transparent;
+        border-bottom: solid 7px $green;
+    }
+    h4{
+        text-align: center;
+        font-size:18px;
+        font-family: $introrustg;
+        border-bottom:1px dashed $white;
+        padding: 20px 0px 25px;
+    }
+    ul{
+        list-style: none;
+        padding:0px;
+        li{
+            border-bottom: 1px dashed $white;
+            padding: 15px;
+            display: table;
+            width: 100%;
+            p{
+                margin-bottom: 3px;
+                margin-top: 3px;
+            }
+            span:first-child{
+                float: left;
+            }
+            span:last-child {
+                float: right;
+            }
+            .span-price {
+                font-weight: bold;
+            }
+            .price-total {
+                width:100%;
+                display:table;
+                font-size:30px;
+                font-weight:bold;
+                text-align: center;
+                float: none!important;
+            }
+            &:last-child{
+                border-bottom: 0px;
+            }
+        }
+    }
+}
+
+/***Common-Cart-Summary-End***/
+
+@media (max-width:480px) {
+    .your-cart-sec {
+        .your-cart-form {
+            #cartForm {
+                .product-list {
+                    table {
+                        thead{
+                            font-size: 10px;
+                        }
+                        tbody{
+                            .adventure-time {
+                                font-size: 10px;
+                            }
+                            tr{
+                                td{
+                                    font-size: 10px;
+                                }
+                            }
+                            .dlt-symbol img {
+                                height: 15px;
+                            }
+                        }
+                    }
+                    .nxt-admr button {
+                        margin-bottom:10px;
+                    }
+                }
+                .confirmation-tab ul li {
+                    border-right:0px;
+                }
+            }
+        }
+    }
+    .heading-text h3{
+        font-family: 16px;
+    }
+    .your-details .form-group{
+        width: 100%;
+    }
+}
+
+@media (max-width:991px) {
+    .your-cart-sec {
+        .container {
+            padding: 0px 10px;
+        }
+        .your-cart-form {
+            padding: 5px;
+            margin-top: -50px;
+            margin-bottom: 50px;
+            margin-left: 0px;
+            margin-right: 0px;
+            #cartForm{
+                padding: 0px;
+            }
+        }
+    }
+}
+
+.payment-select{
+    color:$black;
+    text-align: left;
+    display: block;
+    position: relative;
+    float:left;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight:600;
+    margin-bottom:0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    span{
+        display:table;
+        font-size: 14px;
+    }
+  }
+  
+  /* Hide the browser's default checkbox */
+  .payment-select input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .select-radio {
+    position: absolute;
+    top: 6px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: $white;
+    border:4px solid $grey;
+    border-radius: 50px;
+  }
+  
+  
+  /* When the checkbox is checked, add a blue background */
+  .payment-select input:checked ~ .select-radio {
+    border-color:$border-blue;
+    
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .select-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+  .box {
+    color: #fff;
+    padding: 20px;
+    display: none;
+    margin-top: 20px;
+  }
+  
+
+#paypal-bg {
+    background-color:$grey-light;
+}
+
+#paypal-bg.paypal-method {
+    background-color:$grey-light;
+}
+
+#card-bg.paypal-method {
+    background-color: transparent;
+}
+
+#paypal-bg.card-method {
+    background-color:transparent;
+}
+
+#card-bg.card-method {
+    background-color: $grey-light;
+}
+
+@media (max-width:767px){
+    .book-by-stay {
+        .btn-next-previous button {
+            font-size: 16px;
+            height: 45px;
+            padding: 0px 40px;
+        }
+    }
+    .cart-summary {
+        margin-top: 30px;
+    }
+    .heading-text h3 {
+        font-size:18px;
+    }
+    .count-table {
+        .symbol-operator {
+            font-size: 50px;
+            margin: 0px 10px;
+        }
+        .price-box {
+            padding: 10px;
+            h1{
+                font-size: 30px;
+                padding-left: 10px;
+
+                .dolloer-span{
+                    top: 3px;
+                    font-size: 20px;
+                }
+                .v-span {
+                    font-size: 20px;
+                    top: 3px;
+                }
+            }
+            p{
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+        }
+        .price-box.total-person {
+            h1 {
+                padding-right: 0px;
+            }
+        }
+        .scheme-div {
+            ul {
+                li{
+                    /*height: 40px;*/
+                    font-size: 14px;
+                    padding: 10px;
+                    height: auto;
+                }
+            }
+        }
+    }
+    .pick-box {
+        font-size: 14px;
+    }
+    .book-by-stay .start-over h1{
+        text-align: center;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .book-by-stay {
+        .step-circle {
+            li{
+                font-size:10px;
+            }
+        }
+    }
+    .cart-summary {
+        ul{
+            li{
+                font-size:12px;
+            }
+        }
+    }
+    .count-table {
+        .scheme-div {
+            ul {
+                li{
+                    font-size: 20px;
+                    padding: 10px 20px;
+                    /*height: 50px;*/
+                    height: auto;
+                }
+            }
+        }
+        .symbol-operator{
+            font-size: 60px;
+            margin: 0px 20px;
+        }
+        .price-box {
+            h1{
+                padding-left: 30px;
+                font-size:50px;
+                .dolloer-span {
+                    font-size:30px;
+                    top: 7px;
+                }
+                .v-span {
+                    font-size:20px;
+                    top:14px;
+                }
+            }
+            p{
+                margin-bottom:0px;
+            }
+            padding: 20px;
+        }
+        .price-box.total-person h1 {
+            padding-right: 30px;
+        }
+    }
+    .pick-box {
+        font-size:20px;
+    }
+}
+
+@media (max-width:991px){
+    .book-by-stay {
+        .btn-next-previous button {
+            font-size: 16px;
+            height: 45px;
+            padding: 0px 40px;
+        }
+        #regForm{
+            padding: 10px 20px;
+        }
+        .start-over{
+            margin: 0px 20px;
+            h1 {
+                text-align: center;
+                font-size: 24px;
+            }
+        }
+        .days-div {
+            ul {
+                li {
+                    .days-num {
+                        h1{
+                            font-size: 50px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .sted-options a {
+        padding: 20px 0px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,926 @@
+.book-by-stay {
+    position: relative;
+    color:$white;
+    background-color: $blue;
+    padding: 50px 0px;
+    margin-bottom: 60px;
+    float: left;
+    width: 100%;
+
+    .btn-next-previous {
+      padding: 40px 0px 0px;
+      position: relative;
+      float: left;
+      width: 100%;
+      button {
+        font-size: 20px;
+        text-transform: uppercase;
+        background-color:$green;
+        border:1px solid $white;
+        color:$white;
+        height: 58px;
+        padding: 0px 100px;
+        border-radius: 4px;
+        &:hover{
+          background-color:$white;
+          color:$green;
+          border-color:$green;
+        }
+      }
+    }
+    .days-div {
+      display: table;
+      width: 100%;
+      ul{
+        list-style: none;
+        padding-left: 0px;
+        li{
+          width: 25%;
+          float: left;
+          .days-num{
+            color: $green;
+            background-color: $white;
+            text-align: center;
+            padding: 20px;
+            margin: 15px;
+            h1{
+              font-size: 80px;
+              font-family: $introrustg;
+              margin-bottom: 0px;
+              position: relative;
+            }
+            p{
+              font-size: 14px;
+              margin: 0px;
+              font-weight: 600;
+            }
+          }
+          .interest-text {
+            h1{
+              font-size: 35px;
+              padding: 20px 0px
+            }
+          }
+        }
+      }
+    }
+    .start-over {
+      margin: 0px 40px;
+      position: relative;
+      a{
+        position: absolute;
+        left:0px;
+        color:$white;
+        font-size:20px;
+        font-weight: 600;
+        float: left;
+        i{
+          margin-right:40px;
+        }
+      }
+      h1{
+        font-family:$introrustg;
+        font-size:34px;
+      }
+    }
+      #regForm {
+        margin: auto;
+        padding: 10px 40px;
+        min-height: 300px;
+        position: relative;
+        float: left;
+        width: 100%;
+      }
+
+      .your-details .form-group{
+        margin-bottom: 30px;
+
+        span.error-span{
+          position: absolute;
+        }
+      }
+  
+    input {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        border: 1px solid #aaaaaa;
+        outline: none;
+
+        &.check-available{
+          font-size: 15px;
+        }
+
+        &.custom-control-input{
+          width: auto;
+        }
+      }
+  
+  /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+        background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+    .tab {
+        display: none;
+        float: left;
+        width: 100%;
+
+        .radios{
+          margin-top: 30px;
+          display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .input-wrapper{
+              flex: 0 0 25%;
+            }
+
+          input[type=radio]{
+            display: none;
+
+            &:checked + .radio div {
+                background-color: $green;
+
+                h2{
+                  color: $white;
+                }
+                p{
+                  color: $white;
+                }
+            }
+          }
+
+          .radio{
+
+            div{
+                cursor: pointer;
+                border: 1px solid $green;
+                background-color: $white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 240px;
+                min-height: 157px;
+                margin-bottom: 10px;
+                max-width: 100%;
+
+                h2{
+                  font-size: 80px;
+                  letter-spacing: 2.5px;
+                  color: $green;
+                  font-family: introrustg;
+                  margin: 0;
+                }
+                p{
+                  font-size: 14px;
+                  font-weight: 600;
+                  color: $green;
+                  margin-bottom: 0;
+                }
+            }
+
+            p{
+              color: $green;
+              font-size: 20px;
+              font-weight: bold;
+              letter-spacing: 1.18px;
+              line-height: 50px;
+              text-align: center;
+            }
+          }
+        }
+    }
+    #prevBtn {
+        background:transparent;
+        border: 0px;
+        outline: none;
+        font-weight: 600;
+    }
+  
+  /* Make circles that indicate the steps of the form: */
+  .step-circle {
+    display: table;
+    width:100%;
+    list-style: none;
+    border-bottom:1px solid $white;
+    padding-left: 0px;
+    li{
+      position: relative;
+      display: table-cell;
+      padding: 20px 0px;
+      .step {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom:-8px;
+        margin: auto;
+        height: 12px;
+        width: 12px;
+        background-color: $white;
+        border: none;  
+        border-radius: 50px;
+        display: block;
+        float: left;
+        border-bottom:1px solid $white;
+        &.active{
+          height: 16px;
+          width: 16px;
+        }
+        &.finish {
+          background-color: #4CAF50;
+        }
+      }
+    }
+  }
+}
+
+.heading-text {
+  padding: 20px 0px 10px;
+  h3{
+    font-size:20px;
+  }
+  h2{
+    font-family: $introrustg;
+    font-size:26px;
+    margin-top:20px;
+  }
+}
+
+/***section-pick-option-start***/
+
+.pick-plan-div .pick-plan-section {
+  display: table;
+  width: 100%;
+  ul{
+    /*display: table;*/
+    width: 100%;
+    margin: 0px;
+    display: block;
+    float: left;
+    height: 400px;
+    overflow: auto;
+
+    &::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba($black,0.3);
+      border-radius: 25px;
+      background-color: #F5F5F5;
+    }
+
+    &::-webkit-scrollbar
+    {
+      width: 8px;
+      background-color: #F5F5F5;
+      border-radius: 25px;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+      border-radius: 25px;
+      -webkit-box-shadow: inset 0 0 6px rgba($black,.3);
+      background-color: $green;
+    }
+    li{
+      position: relative;
+      float: left;
+      width: 33.33%;
+      padding: 20px;
+      .pick-text{
+        .pick-box{
+          @media all and (min-width: 1024px) {
+            min-height:110px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          @media all and (min-width: 1200px) {
+            min-height:80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+        }
+      }
+    }
+  }
+}
+
+.pick-text {
+  width: 100%;
+  position: relative;
+  margin: 0px;
+}
+
+.pick-text input[type="checkbox"] {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+.pick-box {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  height: auto;
+  background-color: $white;
+  color:$green;
+  font-size:20px;
+  font-family: $introrustg;
+  padding: 10px;
+}
+
+.pick-text input:checked ~ .pick-box {
+  background-color: $green;
+  color:$white;
+}
+
+/***section-pick-option-end***/
+
+/***section-schedule-timing-start***/
+
+.start-end-div {
+  .scheme-name {
+    h1{
+      font-size: 24px;
+      font-family: $introrustg;
+      margin: 20px 0px;
+    }
+  }
+  .bg-white {
+    background-color: $white;
+    align-items: center;
+    .group-dt {
+      color:$black;
+      float: left;
+      display: block;
+      width: 100%;
+      padding: 20px 10px;
+
+      .price-box.total-person{
+        select{
+          height: 50px;
+        }
+      }
+
+      .custom-control.custom-radio {
+        display: inline-block;
+        float: left;
+
+        .custom-control-label{
+          padding: 0;
+          margin-right: 5px;
+        }
+      }
+      &.availability-timings{
+        display: flex;
+        align-items: center;
+
+        .custom-control.custom-radio{
+          margin-left: 15px;
+
+          label{
+            padding: 0;
+            margin: 0;
+          }
+        }
+        .custom-control-input:checked~.custom-control-label::before{
+          border-color: $green;
+          background-color: $green;
+        }
+        label{
+          padding: 0;
+        }
+        input{
+          width: auto;
+        }
+      }
+      .gj-datepicker, 
+      .gj-timepicker {
+        position: relative;
+        display: table;
+      }
+      .gj-datepicker {
+        width: 150px;
+        float: left;
+        clear: both;
+      }
+      .gj-timepicker {
+        width: 125px;
+      }
+      label{
+        float:left;
+        margin-right: 20px;
+        margin-bottom: 0px;
+        padding: 12px 0px;
+        font-size: 15px;
+        font-weight: 500;    
+      }
+      .input-group-append {
+        z-index: 9;
+        position: absolute;
+        top:0;
+      }
+      .gj-icon.clock {
+        height: 40px;
+        padding: 14px 8px;
+        position: absolute;
+        left: 0px;
+        right: auto;
+      }
+      .gj-datepicker-bootstrap [role=right-icon] button {
+        border: 0px;
+        height: 50px;
+        .gj-icon{
+          top:15px;
+        }
+      }
+      .dt-input {
+        font-family: $Montserrat;
+        font-size: 15px;
+        font-weight: 500;
+        background: rgba($green, 0.07);
+        border-radius: 5px!important;
+        padding-left: 40px!important;
+        width: 100%!important;
+        height: 50px;
+        border:1px solid rgba($black, 0.07);
+        &:focus{
+          border-bottom:1px solid;
+        }
+      }
+      .tm-input {
+        text-transform: uppercase;
+      }
+    }
+    .availability-btn-container{
+      display: block;
+      width: 100%;
+      padding: 10px 0 30px 0;
+
+      input{
+        width: auto;
+        background: $blue;
+        color: $white;
+        font-weight: 500;
+        border: 2px solid $blue;
+
+        &:hover{
+          color: $blue;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.sted-options {
+  border-left:1px solid $border-grey;
+  a{
+    height: 100%;
+    display: inline-block;
+    padding: 33px 0px;
+    color:$black;
+    font-weight: bold;
+  }
+}
+
+/***section-schedule-timing-end***/
+
+/***section-count-table-start***/
+
+.count-table {
+  font-family: $introrustg;
+  text-align: center;
+  margin: auto;
+  .symbol-operator {
+    font-size: 100px;
+    margin: 0px 40px;
+  }
+  .scheme-div {
+    ul{
+      list-style: none;
+      padding-left:0px;
+      li{
+        /*height: 65px;*/
+        width: 100%;
+        background-color: $white;
+        color: $green;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin: 20px 0px;
+        &:last-child{
+          margin-bottom:0px;
+        }
+
+        span.price {
+          display: block;
+          float: none;
+          margin-left: 0;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .price-box {
+    background-color: $white;
+    color:$green;
+    padding: 48px;
+    h1{
+      position: relative;
+      padding-left:40px;
+      font-size:80px;
+      margin-bottom:0px;
+      .dolloer-span{
+        font-size:50px;
+        position: absolute;
+        top:10px;
+        left:0;
+      }
+      .v-span {
+        font-size: 40px;
+        position: absolute;
+        top: 25px;
+        right: 0;
+      }
+    }
+    p{
+      font-size:18px;
+      font-family: $Montserrat;
+      font-weight: bold;
+    }
+    &.total-person {
+      h1{
+        padding-right:40px;
+        padding-left: 0px;
+      }
+    }
+  }
+}
+
+/***section-count-table-end***/
+
+.payment-bbs {
+  padding-top:40px;
+}
+
+.bbs-confirmation {
+  padding-top:40px;
+}
+
+.bbs-yuordetails {
+  padding-top:40px;
+  text-align: left;
+  .agree-check {
+    h4{
+      color: $white;
+    }
+  }
+}
+
+/***budget-screen-rework***/
+
+.book-by-stay {
+  .tab .radios .radio {
+    div.budget-num h2 {
+      font-size: 50px;
+      position: relative;
+      padding: 20px 0px;
+      .doller-greterthan {
+        font-size: 30px;
+      }
+      p{
+        font-size: 14px;
+        margin: 0px;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+    }
+    div.interest-text {
+      padding: 20px;
+      h2{
+        font-size: 35px;
+        padding: 20px 0px;
+      }
+    }
+  }
+}
+
+.book-by-stay {
+  .step-circle {
+    li {
+      span{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: $white;
+        border-radius: 50%;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: -6px;
+      }
+      &.active{
+        /*text-transform: uppercase;*/
+        font-weight: 600;
+        span{
+          width: 12px;
+          height: 12px;
+          background-color: $green;
+        }
+      }
+      /*&.finish {
+        span{
+          background: $green;
+        }
+      }*/
+    }
+  }
+}
+
+.start-end-div {
+  .bg-white {
+    .group-dt {
+      .gj-datepicker{
+        input{
+          background-image: url(../images/calendar.png);
+          background-repeat: no-repeat;
+          background-position: 8%;
+        }
+      }
+      .gj-timepicker {
+        background-image: url(../images/clock.png);
+        background-repeat: no-repeat;
+        background-position: 8%;
+      }
+    }
+  }
+}
+
+@media (max-width:480px) {
+  .book-by-stay {
+    .start-over {
+      a {
+        position: relative;
+        display: table;
+        margin-bottom: 20px;
+        float: none;
+        text-align: right;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 767px){
+  .book-by-stay {
+    .step-circle {
+      display: flex;
+      justify-content: space-between;
+      li{
+        display: none;
+        &.active{
+          display: inline-flex;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        &.active + li {
+          display: inline-flex;
+        }
+        span{
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          background: #fff;
+          border-radius: 50%;
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+          bottom: -6px;
+        }
+      }
+    }
+  }
+  .book-by-stay .tab .radios .input-wrapper {
+    flex: 0 0 50%;
+  }
+  .book-by-stay .tab .radios .radio div {
+    width:100%;
+  }
+  .book-by-stay .tab .radios {
+    .radio {
+      display: table;
+      width: 100%;
+      padding: 5px;
+      div.budget-num {
+        h2{
+          font-size: 30px;
+        }
+      }
+      div.interest-text {
+        padding: 10px;
+        h2{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .pick-plan-div {
+    .pick-plan-section {
+      ul {
+        li{
+          width:50%;
+        }
+      }
+    }
+  }  
+}
+
+
+/***budget-screen-reworkend***/
+
+@media all and (min-width: 1200px){
+  .book-by-stay{
+    .tab {
+      .radios {
+        .radio{
+          div.budget-num{
+            h2{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .doller-greterthan{
+                  margin:0 10px 0 0;
+                }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*@media all and (max-width: 1199px){
+  .book-by-stay{
+    .tab{
+      .radios{
+        .radio{
+          div{
+            width: 190px;
+          }
+        }
+      }
+    }
+  }
+}*/
+
+@media all and (max-width: 1199px){
+  .pick-plan-div{
+    .pick-plan-section{
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+    }
+  }
+  .start-end-div{
+    .bg-white{
+      .col-md-6{
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+  .book-by-stay{
+    .tab{
+      .radios{
+        .radio{
+          div{
+            width: 150px;
+            h2{
+              font-size: 60px;
+            }
+            &.budget-num {
+              h2{
+                font-size: 30px;
+                .doller-greterthan {
+                  font-size: 18px;
+                }
+              }
+            }
+            &.interest-text {
+              padding: 10px;
+              h2{
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*@media all and (max-width: 991px){
+  .book-by-stay{
+    .tab{
+      .radios{
+        .radio{
+          div{
+            width: 120px;
+            height: 130px;
+
+            h2{
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+}*/
+@media all and (max-width: 991px){
+  .pick-plan-div{
+    .pick-plan-section{
+      ul{
+        li{
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px){
+  .start-end-div{
+    .bg-white{
+      .group-dt{
+        padding: 20px 8px;
+
+        label{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+@media all and (max-width: 575px){
+  .pick-plan-div{
+    .pick-plan-section{
+      ul{
+        li{
+          padding: 10px;
+
+          .pick-box{
+            padding: 5px;
+            word-break: break-word;
+          }
+        }
+      }
+    }
+  }
+  .book-by-stay{
+    .step-circle{
+      li{
+        font-size: 13px;
+      }
+    }
+  }
+  .count-table{
+    tbody{
+      tr{
+        display: flex;
+        flex-wrap: wrap;
+
+        td{
+          &:first-child,
+          &:nth-of-type(2){
+            flex: 0 0 100%;
+          }
+          &:nth-of-type(3),
+          &:nth-of-type(5){
+            flex: 0 0 33.33%;
+          }
+          &:nth-of-type(4){
+            flex: 0 0 23.33%;
+          }
+        }
+      }
+    }
+  }
+}

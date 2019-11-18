@@ -1,0 +1,302 @@
+.inner-banner{
+	&.careers-banner{
+		&.shop-banner{
+			background-size: auto;
+    		background-position: top;
+		}
+	}
+}
+
+.shop-aloha-sec{
+	position: relative;
+    padding-bottom: 50px;
+
+    &:before{
+    	content: "";
+	    position: absolute;
+	    left: 0;
+	    top: 150px;
+	    width: 100%;
+	    height: 94%;
+	    background-color: #F8F8F7;
+    }
+
+	.info-media-section{
+		&.careers-detail-page {
+		    padding: 70px 60px 40px 60px;
+		    margin-bottom: 0;
+		    position: relative;
+
+		    .shop-post{
+		    	.shop-post-img-div {
+				    max-width: 100%;
+				    overflow: hidden;
+
+				    img{
+				    	-webkit-transition: transform 1s;
+    					transition: transform 1s;
+    					width: 100%;
+				    }
+				}
+
+				&:hover{
+					.shop-post-img-div {
+
+					    img{
+					    	transform: scale(1.1);
+					    }
+					}
+				}
+		    }
+
+		    .shop-two-col-post {
+			    position: relative;
+			    height: 615px;
+			    margin-bottom: 30px;
+
+			    .text-btn-container{
+			    	position: absolute;
+				    width: 100%;
+				    height: 100%;
+				    top: 0;
+				    display: flex;
+				    justify-content: space-between;
+				    flex-direction: column;
+				    align-items: center;
+
+				    h2{
+				    	font-size: 120px;
+					    letter-spacing: 9.8px;
+					    color: $white;
+					    line-height: 1.428;
+				    }
+
+				    a{
+				    	margin-bottom: 30px;
+    					padding: 15px 70px;
+				    }
+			    }
+			}
+
+			.shop-three-col-lagre-post {
+			    height: 560px;
+			    margin-bottom: 30px;
+			    position: relative;
+
+			    .text-btn-container{
+			    	position: absolute;
+				    width: 100%;
+				    height: 100%;
+				    top: 0;
+				    display: flex;
+				    justify-content: space-between;
+				    flex-direction: column;
+				    align-items: center;
+
+				    h2{
+				    	font-size: 90px;
+					    letter-spacing: 7.35px;
+					    color: $white;
+					    line-height: 1.428;
+				    }
+
+				    a{
+				    	margin-bottom: 30px;
+				    }
+			    }
+			}
+
+			.shop-three-col-small-post{
+				height: 350px;
+			    position: relative;
+			    margin-bottom: 30px;
+
+			    .text-btn-container{
+			    	position: absolute;
+				    width: 100%;
+				    height: 100%;
+				    top: 0;
+				    display: flex;
+				    justify-content: center;
+				    align-items: center;
+
+				    h2{
+				    	color: $white;
+					    line-height: 1.428;
+					    font-size: 80px;
+					    letter-spacing: 6.53px;
+				    }
+			    }
+			}
+		}
+	}
+}
+
+@media all and (max-width: 1199px){
+	.shop-aloha-sec{
+		.info-media-section{
+			&.careers-detail-page{
+				.shop-two-col-post{
+					height: 470px;
+				}
+				.shop-three-col-lagre-post{
+					height: 425px;
+
+					.text-btn-container{
+						h2{
+							font-size: 70px;
+						}
+						a{
+							padding: 15px 20px;
+						}
+					}
+				}
+
+				.shop-three-col-small-post{
+					height: 270px;
+
+					h2{
+						font-size: 60px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 991px){
+	.shop-aloha-sec{
+		.info-media-section{
+			&.careers-detail-page{
+				.shop-two-col-post{
+					height: 325px;
+
+					.text-btn-container{
+						h2{
+							font-size: 80px;
+						}
+						a{
+							padding: 15px 20px;
+						}
+					}
+				}
+				.shop-three-col-lagre-post{
+					height: 285px;
+
+					.text-btn-container{
+						h2{
+							font-size: 45px;
+						}
+						a{
+							padding: 10px;
+							font-size: 16px;
+						}
+					}
+				}
+
+				.shop-three-col-small-post{
+					height: 180px;
+
+					.text-btn-container{
+						h2{
+							font-size: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 767px){
+	.shop-aloha-sec{
+		&:before{
+			height: 98%;
+		}
+		.info-media-section{
+			&.careers-detail-page{
+				.shop-two-col-post{
+					height: auto;
+
+					.text-btn-container{
+						h2{
+							font-size: 80px;
+						}
+						a{
+							padding: 15px 20px;
+						}
+					}
+				}
+				.shop-three-col-lagre-post{
+					height: auto;
+
+					.text-btn-container{
+						h2{
+							font-size: 80px;
+						}
+						a{
+							padding: 15px 20px;
+						}
+					}
+				}
+
+				.shop-three-col-small-post{
+					height: auto;
+
+					.text-btn-container{
+						h2{
+							font-size: 80px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media all and (max-width: 575px){
+	.shop-aloha-sec{
+		&:before{
+			height: 96.5%;
+		}
+		.info-media-section{
+			&.careers-detail-page{
+				padding: 30px 20px;
+
+				.shop-two-col-post{
+
+					.text-btn-container{
+						h2{
+							font-size: 60px;
+						}
+					}
+				}
+				.shop-three-col-lagre-post{
+
+					.text-btn-container{
+						h2{
+							font-size: 60px;
+						}
+					}
+				}
+
+				.shop-three-col-small-post{
+
+					.text-btn-container{
+						h2{
+							font-size: 60px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media all and (max-width: 768px) {
+	.info-media-section.careers-detail-page .title-btn-container{
+		margin: auto;
+		text-align:center;
+	}
+}
