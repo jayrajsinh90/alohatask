@@ -22,12 +22,29 @@ function theme_register_my_custom_menu_page(){
         '',
         25
     );
+    add_menu_page(
+        __('Indulge', TEXT_DOMAIN),
+        'Indulge',
+        'manage_options',
+        'indulge',
+        '',
+        '',
+        25
+    );
     add_submenu_page( 
         'planbook', 
         __( 'Booking Category', TEXT_DOMAIN ),
         'Booking Category',
         'manage_options', 
         'edit-tags.php?taxonomy=plan_book_category&post_type=plan_book_listing', 
+        null
+    );
+    add_submenu_page( 
+        'indulge', 
+        __( 'Indulge Category', TEXT_DOMAIN ),
+        'Indulge Category',
+        'manage_options', 
+        'edit-tags.php?taxonomy=indulge_category&post_type=indulge_listing', 
         null
     );
     

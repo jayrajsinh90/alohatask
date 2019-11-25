@@ -9,7 +9,9 @@ class Theme_Taxonomies{
     }
     function register_post_types(){
         $this->register_post_type(array('plan_book_listing'),'plan_book_category','plan_book_categorys');
-    }
+        $this->register_post_type(array('indulge_listing'),'indulge_category','indulge_categorys');
+
+	}
     function register_post_type($post_types=array(),$singular,$plural,$show_ui = true){
     
         $labels = $this->labels($singular,$plural);

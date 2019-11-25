@@ -12,7 +12,6 @@ get_header();
             <h1>INTERACT</h1>
             <div class="inner-page-btn-wrapper">
                 <a href="<?php echo get_site_url(); ?>/interact">BACK</a>
-                <a href="">FOLLOW US</a>
             </div>
         </div>
     </div>
@@ -36,10 +35,6 @@ get_header();
                     </video> -->
                 </div>
                 <?php the_content(); ?>
-                <div class="btn-div">
-                    <a class="green-btn" href="">Book a south maui luau</a>
-                    <a class="green-btn" href="">Book a west maui luau</a>
-                </div>
             </div>
         </div>
     </div>

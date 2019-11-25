@@ -10,6 +10,7 @@ class Theme_Post_Types{
     function register_post_types(){
 		$this->register_post_type('happy_customer','happy_customers',array('title','thumbnail'),true,'happy-customer');
 		$this->register_post_type('plan_book_listing','plan_book_listings',array('title','editor','thumbnail'),true,'planbook');		
+		$this->register_post_type('indulge_listing','indulge_listings',array('title','editor','thumbnail'),true,'indulge');		
 
 	}
     function register_post_type($singular,$plural, $supports = array('title', 'excerpt', 'comments','thumbnail'), $hierarchical=false, $show_in_menu=true, $hide_in_search=false){

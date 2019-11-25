@@ -19,6 +19,9 @@ $theme_ajax = new Theme_Ajax();
 require_once('classes/class.PlanBook.php');
 $theme_planbook = new Theme_PlanBook();
 
+require_once('classes/class.Indulge.php');
+$theme_indulge = new Theme_Indulge();
+
 require_once('classes/class.General.php');
 $theme_general = new Theme_General();
 
